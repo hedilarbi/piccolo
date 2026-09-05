@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Archivo:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #050505; color: #F3EFE9; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  a { color: #F3EFE9; text-decoration: none; }
+  a:hover { color: var(--accent, #EF2F29); }
+  ::selection { background: var(--accent, #EF2F29); color: #050505; }
+  @keyframes bandSweep { from { transform: translateX(-110%) } to { transform: translateX(110%) } }
+  @keyframes arcOut { 0% { transform:translateY(-50%) scale(.16); opacity:0 } 22% { opacity:.6 } 100% { transform:translateY(-50%) scale(1); opacity:0 } }
+  @keyframes ticker { from { transform: translateX(0) } to { transform: translateX(-50%) } }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; } }
+</style>
+</helmet>
+<div ref="{{ setRoot }}" style="position:relative; background:#050505; font-family:Archivo, Helvetica, Arial, sans-serif; color:#F3EFE9; overflow-x:clip">
+
+  <header data-header="" style="position:fixed; top:0; left:0; right:0; z-index:6000; border-bottom:1px solid rgba(243,239,233,0); transition:background .5s, border-color .5s">
+    <div style="max-width:1680px; margin:0 auto; padding:22px clamp(18px,4vw,60px); display:flex; align-items:center; justify-content:space-between; gap:32px">
+      <a href="Piccolo Teatro - Accueil.dc.html" style="display:block">
+        <img src="uploads/piccolo.png" alt="Piccolo Teatro" style="display:block; height:clamp(42px,4.4vw,62px); width:auto" />
+      </a>
+      <nav style="display:flex; align-items:center; gap:clamp(12px,1.7vw,30px)">
+        <sc-for list="{{ nav }}" as="item" hint-placeholder-count="7">
+          <a href="{{ item.href }}" data-navlink="" style="position:relative; display:none; white-space:nowrap; font-size:12.5px; letter-spacing:.16em; text-transform:uppercase; color:#AAA6A3; padding:6px 0; transition:color .35s" style-hover="color:#F3EFE9">{{ item.label }}<span style="position:absolute; left:0; bottom:0; height:1px; width:0; background:var(--accent,#EF2F29); transition:width .45s cubic-bezier(.16,1,.3,1)"></span></a>
+        </sc-for>
+        <a href="Piccolo Teatro - Accueil.dc.html#contact" style="border:1px solid rgba(243,239,233,.24); padding:11px 20px; font-size:12px; letter-spacing:.16em; text-transform:uppercase; transition:background .4s, border-color .4s, color .4s" style-hover="background:var(--accent,#EF2F29); border-color:var(--accent,#EF2F29); color:#050505">Diffuser un projet</a>
+        <button data-menu-btn="" onClick="{{ toggleMenu }}" style="display:none; background:none; border:1px solid rgba(243,239,233,.24); color:#F3EFE9; padding:10px 14px; font-family:inherit; font-size:11px; letter-spacing:.16em; text-transform:uppercase; cursor:pointer">Menu</button>
+      </nav>
+    </div>
+    <div data-mobile-menu="" style="display:none; overflow:hidden; max-height:0; background:rgba(5,5,5,.97); border-top:1px solid rgba(243,239,233,.1); transition:max-height .5s cubic-bezier(.16,1,.3,1)">
+      <div style="display:flex; flex-direction:column; gap:2px; padding:18px clamp(18px,4vw,60px) 28px">
+        <sc-for list="{{ nav }}" as="item" hint-placeholder-count="7">
+          <a href="{{ item.href }}" onClick="{{ closeMenu }}" style="font-family:'Bodoni Moda',Georgia,serif; font-size:26px; padding:8px 0; border-bottom:1px solid rgba(243,239,233,.08)">{{ item.label }}</a>
+        </sc-for>
+      </div>
+    </div>
+  </header>
+
+  <section style="position:relative; min-height:94svh; display:flex; align-items:flex-end; padding:clamp(126px,18vh,196px) 0 clamp(44px,7vh,80px); overflow:hidden">
+    <div aria-hidden="true" data-bands="" style="position:absolute; inset:0; pointer-events:none; overflow:hidden">
+      <sc-for list="{{ bands }}" as="b" hint-placeholder-count="5">
+        <span style="position:absolute; left:0; top:{{ b.top }}; width:46%; height:{{ b.h }}; background:linear-gradient(90deg, transparent, rgba(239,47,41,{{ b.a }}), transparent); animation:bandSweep {{ b.dur }} linear {{ b.delay }} infinite"></span>
+      </sc-for>
+    </div>
+    <div aria-hidden="true" style="position:absolute; inset:0; background:radial-gradient(115% 85% at 20% 55%, rgba(239,47,41,.1), transparent 60%), radial-gradient(120% 90% at 50% 100%, transparent 45%, #050505 100%)"></div>
+
+    <div style="position:relative; z-index:3; width:100%; max-width:1680px; margin:0 auto; padding:0 clamp(18px,4vw,60px)">
+      <a href="Piccolo Teatro - Accueil.dc.html#activites" style="display:inline-flex; align-items:center; gap:10px; font-size:11.5px; letter-spacing:.18em; text-transform:uppercase; color:#AAA6A3; margin-bottom:26px">← Retour aux activités</a>
+      <div style="display:flex; align-items:center; gap:14px; margin-bottom:18px; flex-wrap:wrap">
+        <span style="font-family:'JetBrains Mono',ui-monospace,monospace; font-size:11.5px; letter-spacing:.2em; color:var(--accent,#EF2F29)">ACTE IV · 02</span>
+        <span style="width:46px; height:1px; background:var(--accent,#EF2F29)"></span>
+        <span style="font-size:11px; letter-spacing:.28em; text-transform:uppercase; color:#AAA6A3">Activité — Sur les planches</span>
+      </div>
+
+      <h1 style="margin:0; font-family:'Bodoni Moda',Georgia,serif; font-weight:400; font-size:clamp(46px,9.4vw,168px); line-height:.92; letter-spacing:-.03em">Diffusion<br /><span style="font-style:italic; color:var(--accent,#EF2F29)">artistique</span></h1>
+
+      <p data-reveal="" style="margin:clamp(30px,4.4vh,48px) 0 clamp(34px,5vh,56px); max-width:56ch; font-size:clamp(16px,1.2vw,19px); line-height:1.8; color:#AAA6A3; text-wrap:pretty">L'ensemble des actions qui permettent de faire connaître, présenter et rendre accessibles les créations artistiques au public.</p>
+
+      <div data-reveal="" data-delay="140" style="display:flex; flex-wrap:wrap; gap:14px">
+        <a href="Piccolo Teatro - Accueil.dc.html#contact" style="padding:16px 28px; background:var(--accent,#EF2F29); color:#050505; font-size:12px; letter-spacing:.16em; text-transform:uppercase; transition:transform .4s cubic-bezier(.16,1,.3,1), box-shadow .4s" style-hover="transform:translateY(-3px); box-shadow:0 18px 44px rgba(239,47,41,.32)">Diffuser un projet</a>
+        <a href="#formes" style="padding:16px 28px; border:1px solid rgba(243,239,233,.26); font-size:12px; letter-spacing:.16em; text-transform:uppercase; transition:border-color .4s, transform .4s" style-hover="border-color:#F3EFE9; transform:translateY(-3px)">Les formes de diffusion</a>
+      </div>
+    </div>
+  </section>
+
+  <div style="position:relative; border-top:1px solid rgba(243,239,233,.1); border-bottom:1px solid rgba(243,239,233,.1); overflow:hidden; padding:18px 0">
+    <div data-ticker="" style="display:flex; width:max-content; animation:ticker 34s linear infinite">
+      <sc-for list="{{ tickerWords }}" as="w" hint-placeholder-count="12">
+        <span style="display:flex; align-items:center; gap:clamp(20px,3vw,44px); padding-right:clamp(20px,3vw,44px); font-family:'Bodoni Moda',Georgia,serif; font-size:clamp(17px,1.6vw,25px); white-space:nowrap; color:{{ w.color }}">{{ w.text }}<span style="width:5px; height:5px; border-radius:50%; background:var(--accent,#EF2F29)"></span></span>
+      </sc-for>
+    </div>
+  </div>
+
+  <section id="formes" style="position:relative; padding:clamp(70px,11vh,130px) 0">
+    <div style="max-width:1680px; margin:0 auto; padding:0 clamp(18px,4vw,60px)">
+      <div style="display:flex; align-items:center; gap:14px; margin-bottom:20px">
+        <span style="width:46px; height:1px; background:var(--accent,#EF2F29)"></span>
+        <span style="font-size:11px; letter-spacing:.28em; text-transform:uppercase; color:#AAA6A3">Les formes de diffusion</span>
+      </div>
+      <h2 data-reveal="" style="margin:0 0 clamp(40px,6vh,68px); font-family:'Bodoni Moda',Georgia,serif; font-weight:400; font-size:clamp(30px,4.2vw,60px); line-height:1.05; letter-spacing:-.015em; max-width:26ch; text-wrap:balance">Six manières de porter une œuvre <span style="font-style:italic">devant un public</span></h2>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:clamp(14px,1.8vw,26px)">
+        <sc-for list="{{ formes }}" as="f" hint-placeholder-count="6">
+          <div data-forme="" data-reveal="" style="position:relative; cursor:default; transition:transform .55s cubic-bezier(.16,1,.3,1)" style-hover="transform:translateY(-8px)">
+            <div style="position:relative; aspect-ratio:3/4; overflow:hidden; border:1px solid rgba(243,239,233,.12)">
+              <img src="{{ f.img }}" alt="" loading="lazy" data-img="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:grayscale(1) brightness(.42); transform:scale(1.02); transition:filter .6s, transform .8s cubic-bezier(.16,1,.3,1)" />
+              <div data-tint="" style="position:absolute; inset:0; background:linear-gradient(0deg, rgba(5,5,5,.92) 0%, rgba(5,5,5,.25) 55%, transparent 100%)"></div>
+              <div style="position:absolute; left:0; right:0; bottom:0; padding:clamp(16px,1.8vw,24px)">
+                <div style="font-family:'JetBrains Mono',ui-monospace,monospace; font-size:10px; letter-spacing:.2em; color:var(--accent,#EF2F29); margin-bottom:10px">{{ f.num }}</div>
+                <div style="font-family:'Bodoni Moda',Georgia,serif; font-size:clamp(20px,1.8vw,28px); line-height:1.1">{{ f.title }}</div>
+                <p data-forme-desc="" style="margin:0; max-height:0; overflow:hidden; opacity:0; font-size:13.5px; line-height:1.7; color:#AAA6A3; transition:max-height .55s cubic-bezier(.16,1,.3,1), opacity .45s, margin .55s">{{ f.desc }}</p>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative; padding:clamp(70px,11vh,130px) 0; background:#0A0A0A; border-top:1px solid rgba(243,239,233,.08); overflow:hidden">
+    <div style="max-width:1680px; margin:0 auto; padding:0 clamp(18px,4vw,60px); display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:clamp(36px,5vw,84px); align-items:center">
+      <div>
+        <div style="display:flex; align-items:center; gap:14px; margin-bottom:24px">
+          <span style="width:46px; height:1px; background:var(--accent,#EF2F29)"></span>
+          <span style="font-size:11px; letter-spacing:.28em; text-transform:uppercase; color:#AAA6A3">Notre rôle</span>
+        </div>
+        <h2 data-reveal="" style="margin:0 0 24px; font-family:'Bodoni Moda',Georgia,serif; font-weight:400; font-size:clamp(30px,4.2vw,60px); line-height:1.05; letter-spacing:-.015em; text-wrap:balance">Faire circuler les œuvres, <span style="font-style:italic; color:var(--accent,#EF2F29)">élargir le cercle</span></h2>
+        <p data-reveal="" data-delay="100" style="margin:0 0 22px; max-width:54ch; font-size:clamp(15.5px,1.15vw,18px); line-height:1.85; color:#AAA6A3; text-wrap:pretty">Le centre accompagne les artistes dans la diffusion de leurs projets à travers des spectacles, représentations, expositions, projections, rencontres et événements culturels.</p>
+        <p data-reveal="" data-delay="180" style="margin:0; max-width:54ch; font-size:clamp(15.5px,1.15vw,18px); line-height:1.85; font-style:italic">Valoriser les artistes et leurs œuvres, développer leur visibilité, et favoriser la rencontre entre la création et le public.</p>
+      </div>
+      <div data-reveal="" data-delay="140" style="position:relative; aspect-ratio:1/1; display:flex; align-items:center; justify-content:center">
+        <span aria-hidden="true" style="position:absolute; left:12%; top:50%; width:12px; height:12px; border-radius:50%; background:var(--accent,#EF2F29); transform:translateY(-50%); box-shadow:0 0 24px rgba(239,47,41,.7)"></span>
+        <sc-for list="{{ arcs }}" as="a" hint-placeholder-count="4">
+          <span aria-hidden="true" style="position:absolute; left:12%; top:50%; width:{{ a.size }}; height:{{ a.size }}; transform:translateY(-50%) scale(.16); border:1px solid rgba(239,47,41,.3); border-radius:50%; transform-origin:left center; z-index:0; animation:arcOut 6s ease-out {{ a.delay }} infinite"></span>
+        </sc-for>
+        <div style="position:absolute; right:2%; top:50%; z-index:2; transform:translateY(-50%); text-align:right">
+          <div style="font-family:'JetBrains Mono',ui-monospace,monospace; font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:#AAA6A3; margin-bottom:8px">Au bout de la portée</div>
+          <div style="font-family:'Bodoni Moda',Georgia,serif; font-style:italic; font-size:clamp(26px,3vw,46px); line-height:1.05">le public</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative; padding:clamp(70px,11vh,130px) 0">
+    <div style="max-width:1680px; margin:0 auto; padding:0 clamp(18px,4vw,60px)">
+      <div style="display:flex; align-items:center; gap:14px; margin-bottom:40px">
+        <span style="width:46px; height:1px; background:var(--accent,#EF2F29)"></span>
+        <span style="font-size:11px; letter-spacing:.28em; text-transform:uppercase; color:#AAA6A3">Ce que la diffusion apporte</span>
+      </div>
+      <div style="display:flex; flex-direction:column">
+        <sc-for list="{{ apports }}" as="a" hint-placeholder-count="3">
+          <div data-row="" data-reveal="" style="position:relative; overflow:hidden; border-top:1px solid rgba(243,239,233,.1); padding:clamp(26px,3.4vw,44px) 0; transition:padding-left .55s cubic-bezier(.16,1,.3,1)">
+            <span data-rowline="" aria-hidden="true" style="position:absolute; left:0; top:-1px; height:1px; width:0; background:var(--accent,#EF2F29); transition:width .7s cubic-bezier(.16,1,.3,1)"></span>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:clamp(14px,2.4vw,44px); align-items:baseline">
+              <div style="display:flex; align-items:baseline; gap:16px">
+                <span style="font-family:'JetBrains Mono',ui-monospace,monospace; font-size:11px; letter-spacing:.18em; color:var(--accent,#EF2F29)">{{ a.num }}</span>
+                <h3 style="margin:0; font-family:'Bodoni Moda',Georgia,serif; font-weight:400; font-size:clamp(24px,3vw,46px); line-height:1.06">{{ a.title }}</h3>
+              </div>
+              <p style="margin:0; max-width:54ch; font-size:clamp(14.5px,1.05vw,16.5px); line-height:1.8; color:#AAA6A3; text-wrap:pretty">{{ a.desc }}</p>
+            </div>
+          </div>
+        </sc-for>
+        <div style="border-top:1px solid rgba(243,239,233,.1)"></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative; padding:clamp(60px,9vh,110px) 0; background:#0A0A0A; border-top:1px solid rgba(243,239,233,.08)">
+    <div style="max-width:1680px; margin:0 auto; padding:0 clamp(18px,4vw,60px); display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:clamp(26px,4vw,60px)">
+      <sc-for list="{{ facts }}" as="f" hint-placeholder-count="4">
+        <div data-reveal="">
+          <div style="font-family:'JetBrains Mono',ui-monospace,monospace; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent,#EF2F29); margin-bottom:14px">{{ f.label }}</div>
+          <div style="font-family:'Bodoni Moda',Georgia,serif; font-size:clamp(19px,1.7vw,27px); line-height:1.3">{{ f.value }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="position:relative; padding:clamp(80px,12vh,150px) 0; overflow:hidden">
+    <div aria-hidden="true" style="position:absolute; inset:0; pointer-events:none; background:radial-gradient(80% 60% at 50% 100%, rgba(239,47,41,.16), transparent 65%)"></div>
+    <div style="position:relative; max-width:900px; margin:0 auto; padding:0 clamp(18px,4vw,60px); text-align:center">
+      <h2 data-reveal="" style="margin:0 0 22px; font-family:'Bodoni Moda',Georgia,serif; font-weight:400; font-size:clamp(32px,5.2vw,78px); line-height:1.03; letter-spacing:-.02em; text-wrap:balance">Votre œuvre mérite d'être <span style="font-style:italic; color:var(--accent,#EF2F29)">vue</span></h2>
+      <p data-reveal="" data-delay="120" style="margin:0 auto 34px; max-width:46ch; font-size:clamp(15px,1.1vw,17px); line-height:1.8; color:#AAA6A3">Parlons de votre projet et des lieux, formats et publics qui lui conviennent.</p>
+      <div data-reveal="" data-delay="220" style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center">
+        <a href="Piccolo Teatro - Accueil.dc.html#contact" style="padding:17px 32px; background:var(--accent,#EF2F29); color:#050505; font-size:12px; letter-spacing:.16em; text-transform:uppercase; transition:transform .4s cubic-bezier(.16,1,.3,1), box-shadow .4s" style-hover="transform:translateY(-3px); box-shadow:0 20px 50px rgba(239,47,41,.3)">Nous contacter</a>
+        <a href="Piccolo Teatro - Accueil.dc.html#spectacles" style="padding:17px 32px; border:1px solid rgba(243,239,233,.26); font-size:12px; letter-spacing:.16em; text-transform:uppercase; transition:border-color .4s, transform .4s" style-hover="border-color:#F3EFE9; transform:translateY(-3px)">Voir les spectacles</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="position:relative; background:#050505; color:#F3EFE9; border-top:1px solid rgba(243,239,233,.08); overflow:hidden">
+    <div style="position:relative; z-index:2; max-width:1680px; margin:0 auto; padding:clamp(60px,9vh,110px) clamp(18px,4vw,60px) clamp(140px,20vh,230px); display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:clamp(32px,4vw,64px)">
+      <div>
+        <img src="uploads/piccolo.png" alt="Piccolo Teatro" style="display:block; height:92px; width:auto; margin-bottom:24px" />
+        <p style="margin:0 0 24px; max-width:34ch; font-size:14px; line-height:1.75; color:#AAA6A3">Centre culturel et artistique dédié au théâtre, à la création et à l'accompagnement des artistes.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:12px 18px">
+          <sc-for list="{{ socials }}" as="s" hint-placeholder-count="4">
+            <a href="Piccolo Teatro - Accueil.dc.html#contact" style="font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:#AAA6A3; transition:color .35s" style-hover="color:var(--accent,#EF2F29)">{{ s }}</a>
+          </sc-for>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent,#EF2F29); margin-bottom:20px">Nous trouver</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:14px; line-height:1.65; color:#AAA6A3">
+          <span>12 rue des Coulisses<br />1000 Bruxelles</span>
+          <a href="Piccolo Teatro - Accueil.dc.html#contact" style="color:#AAA6A3">+32 2 000 00 00</a>
+          <a href="Piccolo Teatro - Accueil.dc.html#contact" style="color:#AAA6A3">bonjour@piccoloteatro.be</a>
+          <span>Mar — Sam · 10h — 19h</span>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent,#EF2F29); margin-bottom:20px">Navigation</div>
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <sc-for list="{{ nav }}" as="item" hint-placeholder-count="7">
+            <a href="{{ item.href }}" style="font-size:14px; color:#AAA6A3; transition:color .35s" style-hover="color:#F3EFE9">{{ item.label }}</a>
+          </sc-for>
+        </div>
+      </div>
+      <div style="font-size:11.5px; color:#8f8b88; align-self:end">
+        <a href="Piccolo Teatro - Accueil.dc.html#contact" style="color:#8f8b88; display:block; margin-bottom:8px">Mentions légales</a>
+        <span>© 2026</span>
+      </div>
+    </div>
+    <div aria-hidden="true" style="position:absolute; left:50%; bottom:-4.5vw; transform:translateX(-50%); width:100%; text-align:center; font-family:'Bodoni Moda',Georgia,serif; font-size:15.5vw; line-height:.78; letter-spacing:-.03em; white-space:nowrap; color:rgba(243,239,233,.05); pointer-events:none; user-select:none">PICCOLO TEATRO</div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#EF2F29&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#EF2F29&quot;,&quot;#D98A2B&quot;,&quot;#2F5BD8&quot;,&quot;#F3EFE9&quot;],&quot;section&quot;:&quot;Direction artistique&quot;},&quot;lightBands&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Direction artistique&quot;},&quot;ticker&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Direction artistique&quot;}}">
+class Component extends DCLogic {
+  state = { menu: false };
+  setRoot = (el) => { this.root = el; };
+
+  nav = [
+    { label: 'Accueil', href: 'Piccolo Teatro - Accueil.dc.html#top' },
+    { label: 'Le Centre', href: 'Piccolo Teatro - Accueil.dc.html#centre' },
+    { label: 'Ateliers', href: 'Piccolo Teatro - Accueil.dc.html#ateliers' },
+    { label: 'Activités', href: 'Piccolo Teatro - Accueil.dc.html#activites' },
+    { label: 'Événements', href: 'Piccolo Teatro - Accueil.dc.html#evenements' },
+    { label: 'Spectacles', href: 'Piccolo Teatro - Accueil.dc.html#spectacles' },
+    { label: 'Actualités', href: 'Piccolo Teatro - Accueil.dc.html#actualites' }
+  ];
+
+  bands = [
+    { top: '18%', h: '2px', a: '.5', dur: '11s', delay: '0s' },
+    { top: '34%', h: '1px', a: '.35', dur: '15s', delay: '2.4s' },
+    { top: '52%', h: '3px', a: '.28', dur: '13s', delay: '1.2s' },
+    { top: '71%', h: '1px', a: '.4', dur: '17s', delay: '3.8s' },
+    { top: '86%', h: '2px', a: '.22', dur: '12s', delay: '5.1s' }
+  ];
+
+  arcs = [
+    { size: '58%', delay: '0s' },
+    { size: '76%', delay: '1.5s' },
+    { size: '94%', delay: '3s' },
+    { size: '112%', delay: '4.5s' }
+  ];
+
+  formes = [
+    { num: '01', title: 'Spectacles', desc: "Des créations portées en salle, dans leur forme aboutie.", img: 'https://images.unsplash.com/photo-1503095396549-807759245b35?w=700&h=930&fit=crop&q=75' },
+    { num: '02', title: 'Représentations', desc: "Séries et tournées, pour installer une œuvre dans la durée.", img: 'https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=700&h=930&fit=crop&q=75' },
+    { num: '03', title: 'Expositions', desc: "Donner à voir le travail plastique et les traces du processus.", img: 'https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=700&h=930&fit=crop&q=75' },
+    { num: '04', title: 'Projections', desc: "Captations, films et formats écran présentés au public.", img: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=700&h=930&fit=crop&q=75' },
+    { num: '05', title: 'Rencontres', desc: "Échanges avec les artistes, avant ou après la représentation.", img: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=700&h=930&fit=crop&q=75' },
+    { num: '06', title: 'Événements culturels', desc: "Temps forts, festivals et soirées qui rassemblent les publics.", img: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=700&h=930&fit=crop&q=75' }
+  ];
+
+  apports = [
+    { num: '01', title: 'Valoriser', desc: "Mettre en lumière les artistes et leurs œuvres, avec les moyens et le cadre qu'elles méritent." },
+    { num: '02', title: 'Rendre visible', desc: "Développer la visibilité des projets auprès des lieux, des partenaires et de la presse." },
+    { num: '03', title: 'Faire se rencontrer', desc: "Créer les conditions de la rencontre entre la création artistique et le public." }
+  ];
+
+  facts = [
+    { label: 'Formats', value: 'Salle, exposition, écran, rencontre' },
+    { label: 'Pour qui', value: 'Artistes et compagnies accompagnés' },
+    { label: 'Portée', value: 'Lieux, partenaires et publics' },
+    { label: 'Finalité', value: 'La rencontre avec le public' }
+  ];
+
+  socials = ['Instagram', 'Facebook', 'Vimeo', 'LinkedIn'];
+
+  get tickerWords() {
+    const base = ['Spectacles', 'Représentations', 'Expositions', 'Projections', 'Rencontres', 'Événements culturels'];
+    const once = base.map((t, i) => ({ text: t, color: i % 2 ? 'rgba(243,239,233,.55)' : '#F3EFE9' }));
+    return once.concat(once.map((o) => ({ text: o.text, color: o.color })));
+  }
+
+  toggleMenu = () => { this.setState((s) => ({ menu: !s.menu }), () => this.applyResponsive()); };
+  closeMenu = () => { this.setState({ menu: false }, () => this.applyResponsive()); };
+
+  componentDidMount() {
+    const root = this.root; if (!root) return;
+    this.reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (this.props.accent) root.style.setProperty('--accent', this.props.accent);
+    if (this.props.lightBands === false) { const b = root.querySelector('[data-bands]'); if (b) b.style.display = 'none'; }
+    if (this.props.ticker === false) { const t = root.querySelector('[data-ticker]'); if (t) t.style.animation = 'none'; }
+
+    root.querySelectorAll('[data-navlink]').forEach((a) => {
+      const bar = a.querySelector('span');
+      a.addEventListener('mouseenter', () => { if (bar) bar.style.width = '100%'; });
+      a.addEventListener('mouseleave', () => { if (bar) bar.style.width = '0'; });
+    });
+
+    root.querySelectorAll('[data-forme]').forEach((card) => {
+      const img = card.querySelector('[data-img]');
+      const desc = card.querySelector('[data-forme-desc]');
+      card.addEventListener('mouseenter', () => {
+        if (img) { img.style.filter = 'grayscale(.2) brightness(.72)'; img.style.transform = 'scale(1.08)'; }
+        if (desc) { desc.style.maxHeight = '160px'; desc.style.opacity = '1'; desc.style.marginTop = '10px'; }
+      });
+      card.addEventListener('mouseleave', () => {
+        if (img) { img.style.filter = 'grayscale(1) brightness(.42)'; img.style.transform = 'scale(1.02)'; }
+        if (desc) { desc.style.maxHeight = '0'; desc.style.opacity = '0'; desc.style.marginTop = '0'; }
+      });
+    });
+
+    root.querySelectorAll('[data-row]').forEach((row) => {
+      const line = row.querySelector('[data-rowline]');
+      row.addEventListener('mouseenter', () => { row.style.paddingLeft = 'clamp(12px,2vw,34px)'; if (line) line.style.width = '100%'; });
+      row.addEventListener('mouseleave', () => { row.style.paddingLeft = '0'; if (line) line.style.width = '0'; });
+    });
+
+    this.reveals = Array.from(root.querySelectorAll('[data-reveal]'));
+    this.reveals.forEach((el) => {
+      el.style.transition = 'opacity .9s cubic-bezier(.16,1,.3,1), transform .9s cubic-bezier(.16,1,.3,1)';
+      if (!this.reduced) { el.style.opacity = '0'; el.style.transform = 'translateY(20px)'; }
+    });
+    this.show = (el) => {
+      if (el.dataset.shown) return;
+      el.dataset.shown = '1';
+      const d = parseInt(el.dataset.delay || '0', 10);
+      setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'none'; }, d);
+    };
+    if (this.reduced) this.reveals.forEach(this.show);
+    this.safety = setTimeout(() => { this.reveals.forEach(this.show); }, 4000);
+
+    this.onScroll = () => { this.update(); };
+    window.addEventListener('scroll', this.onScroll, { passive: true, capture: true });
+    document.addEventListener('scroll', this.onScroll, { passive: true, capture: true });
+    window.addEventListener('resize', this.onScroll, { passive: true });
+    document.addEventListener('visibilitychange', this.onScroll);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(this.onScroll);
+
+    this.applyResponsive();
+    this.ro = new ResizeObserver(() => { this.applyResponsive(); this.update(); });
+    this.ro.observe(root);
+    this.update();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll, { capture: true });
+    document.removeEventListener('scroll', this.onScroll, { capture: true });
+    window.removeEventListener('resize', this.onScroll);
+    document.removeEventListener('visibilitychange', this.onScroll);
+    clearTimeout(this.safety);
+    this.ro && this.ro.disconnect();
+  }
+
+  applyResponsive() {
+    const root = this.root; if (!root) return;
+    const w = root.clientWidth || window.innerWidth;
+    const compact = w < 1100;
+    root.querySelectorAll('[data-navlink]').forEach((a) => { a.style.display = compact ? 'none' : 'inline-block'; });
+    const btn = root.querySelector('[data-menu-btn]');
+    if (btn) btn.style.display = compact ? 'block' : 'none';
+    const menu = root.querySelector('[data-mobile-menu]');
+    if (menu) { menu.style.display = compact ? 'block' : 'none'; menu.style.maxHeight = compact && this.state.menu ? '520px' : '0'; }
+  }
+
+  update = () => {
+    const root = this.root; if (!root) return;
+    const vh = window.innerHeight;
+    const clamp = (v) => Math.max(0, Math.min(1, v));
+    const y = -root.getBoundingClientRect().top;
+    if (this.lastY === y && this.lastVh === vh) return;
+    this.lastY = y; this.lastVh = vh;
+
+    if (this.reveals) {
+      for (let i = 0; i < this.reveals.length; i++) {
+        const el = this.reveals[i];
+        if (el.dataset.shown) continue;
+        const rr = el.getBoundingClientRect();
+        if (rr.top < vh * 0.92 && rr.bottom > 0) this.show(el);
+      }
+    }
+
+    const header = root.querySelector('[data-header]');
+    if (header) {
+      const o = clamp(y / 140);
+      header.style.background = 'rgba(5,5,5,' + (0.92 * o).toFixed(3) + ')';
+      header.style.backdropFilter = o > 0.04 ? 'blur(14px)' : 'none';
+      header.style.borderBottomColor = 'rgba(243,239,233,' + (0.12 * o).toFixed(3) + ')';
+    }
+  };
+
+  renderVals() {
+    return {
+      nav: this.nav, bands: this.bands, arcs: this.arcs, formes: this.formes,
+      apports: this.apports, facts: this.facts, socials: this.socials, tickerWords: this.tickerWords,
+      setRoot: this.setRoot, toggleMenu: this.toggleMenu, closeMenu: this.closeMenu
+    };
+  }
+}
+</script>
+</body>
+</html>
