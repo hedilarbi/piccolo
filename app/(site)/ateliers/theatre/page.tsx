@@ -3,9 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Atelier Théâtre",
-  description:
-    "Un atelier théâtre ouvert à tous, de 6 ans à plus de 60 ans, pour apprendre, s’exprimer et prendre plaisir à monter sur scène.",
+  title: "Cours de théâtre à Bizerte | Piccolo Teatro",
+  description: "Cours de théâtre à Bizerte pour enfants, adolescents et adultes : jeu, voix, corps et improvisation. Découvrez les ateliers de Piccolo Teatro.",
+  alternates: { canonical: "/ateliers/theatre" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type":"WebPage","@id":"https://piccoloteatro.tn/ateliers/theatre#webpage","url":"https://piccoloteatro.tn/ateliers/theatre","name":"Cours de théâtre à Bizerte | Piccolo Teatro","description":"Cours de théâtre à Bizerte pour enfants, adolescents et adultes : jeu, voix, corps et improvisation. Découvrez les ateliers de Piccolo Teatro.","inLanguage":"fr-TN","isPartOf":{"@id":"https://piccoloteatro.tn/#website"},"publisher":{"@id":"https://piccoloteatro.tn/#organization"},"mainEntity":{"@id":"https://piccoloteatro.tn/ateliers/theatre#service"},"breadcrumb":{"@id":"https://piccoloteatro.tn/ateliers/theatre#breadcrumb"}},
+    {"@type":"Service","@id":"https://piccoloteatro.tn/ateliers/theatre#service","name":"Cours de théâtre à Bizerte","description":"Cours de théâtre à Bizerte pour enfants, adolescents et adultes : jeu, voix, corps et improvisation. Découvrez les ateliers de Piccolo Teatro.","url":"https://piccoloteatro.tn/ateliers/theatre","serviceType":"Cours de théâtre à Bizerte","provider":{"@id":"https://piccoloteatro.tn/#organization"},"audience":{"@type":"Audience","audienceType":"Enfants, adolescents et adultes intéressés par la pratique théâtrale à Bizerte"},"areaServed":{"@type":"City","name":"Bizerte"}},
+    {"@type":"BreadcrumbList","@id":"https://piccoloteatro.tn/ateliers/theatre#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://piccoloteatro.tn/"},{"@type":"ListItem","position":2,"name":"Atelier théâtre","item":"https://piccoloteatro.tn/ateliers/theatre"}]}
+  ]
 };
 
 const skills = [
@@ -29,9 +38,10 @@ function Kicker({ children }: { children: React.ReactNode }) {
 export default function TheatreWorkshopPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="relative isolate flex min-h-[88svh] items-end overflow-hidden">
         <div data-parallax="0.16" className="absolute -inset-[8%] z-0 will-change-transform">
-          <Image src="https://loremflickr.com/1920/1280/theatre,acting,stage?lock=101" alt="Atelier théâtre" fill priority sizes="100vw" className="object-cover grayscale-[.55] brightness-50 contrast-110" />
+          <Image src="https://loremflickr.com/1920/1280/theatre,acting,stage?lock=101" alt="Atelier théâtre" fill priority sizes="100vw" className="object-cover brightness-50 contrast-110" />
         </div>
         <div className="absolute inset-0 z-[1] bg-[radial-gradient(58%_55%_at_60%_40%,rgba(239,47,41,.20),transparent_70%)]" />
         <div className="absolute inset-0 z-[2] bg-[linear-gradient(180deg,rgba(5,5,5,.55)_0%,rgba(5,5,5,.15)_40%,rgba(5,5,5,.94)_100%)]" />
@@ -55,7 +65,7 @@ export default function TheatreWorkshopPage() {
       <section className="py-[clamp(90px,13vh,160px)]">
         <div className="site-container grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] items-center gap-[clamp(40px,6vw,96px)]">
           <div data-reveal data-parallax="0.12" className="relative aspect-[4/5] overflow-hidden bg-[#0d0d0d]">
-            <Image src="https://loremflickr.com/900/1200/theatre,improv,group?lock=102" alt="Jeux théâtraux" fill sizes="(max-width: 800px) 100vw, 50vw" className="object-cover grayscale-[.7] brightness-[.85]" />
+            <Image src="https://loremflickr.com/900/1200/theatre,improv,group?lock=102" alt="Jeux théâtraux" fill sizes="(max-width: 800px) 100vw, 50vw" className="object-cover brightness-[.85]" />
             <div className="absolute inset-0 bg-[radial-gradient(60%_45%_at_30%_20%,rgba(239,47,41,.16),transparent_70%)]" />
           </div>
           <div>
@@ -92,8 +102,8 @@ export default function TheatreWorkshopPage() {
             <Link href="/#contact" className="mt-[34px] inline-flex items-center gap-3 border-b border-[rgba(243,239,233,.25)] pb-2 text-[11.5px] uppercase tracking-[0.18em] transition-colors hover:border-[#EF2F29]">Parler de mon projet <span className="h-px w-6 bg-[#EF2F29]" /></Link>
           </div>
           <div data-reveal data-parallax="-0.08" className="relative mb-12 ml-[10%]">
-            <div className="relative aspect-[3/4] overflow-hidden bg-[#0d0d0d]"><Image src="https://loremflickr.com/900/1200/theatre,production,rehearsal?lock=103" alt="Production théâtrale" fill sizes="(max-width: 800px) 90vw, 45vw" className="object-cover grayscale-[.6] brightness-[.8]" /></div>
-            <div data-parallax="0.10" className="absolute -bottom-[10%] -left-[12%] aspect-[4/5] w-[48%] overflow-hidden border border-[rgba(243,239,233,.08)] bg-[#0d0d0d]"><Image src="https://loremflickr.com/600/750/theatre,spotlight,actor?lock=104" alt="Sur scène" fill sizes="30vw" className="object-cover grayscale-[.5] brightness-[.85]" /></div>
+            <div className="relative aspect-[3/4] overflow-hidden bg-[#0d0d0d]"><Image src="https://loremflickr.com/900/1200/theatre,production,rehearsal?lock=103" alt="Production théâtrale" fill sizes="(max-width: 800px) 90vw, 45vw" className="object-cover brightness-[.8]" /></div>
+            <div data-parallax="0.10" className="absolute -bottom-[10%] -left-[12%] aspect-[4/5] w-[48%] overflow-hidden border border-[rgba(243,239,233,.08)] bg-[#0d0d0d]"><Image src="https://loremflickr.com/600/750/theatre,spotlight,actor?lock=104" alt="Sur scène" fill sizes="30vw" className="object-cover brightness-[.85]" /></div>
           </div>
         </div>
       </section>
@@ -120,7 +130,7 @@ export default function TheatreWorkshopPage() {
           <h2 data-reveal className="mb-[26px] font-display text-[clamp(34px,5.6vw,80px)] font-normal leading-[1.05] tracking-[-0.02em]">Prêt à monter <em className="font-normal">sur scène</em> ?</h2>
           <p data-reveal style={{ "--reveal-delay": "120ms" } as React.CSSProperties} className="mx-auto mb-9 max-w-[44ch] text-[clamp(15px,1.1vw,17px)] leading-[1.75] text-[#AAA6A3]">Écrivez-nous pour connaître les prochaines séances et rejoindre l’atelier théâtre.</p>
           <div data-reveal style={{ "--reveal-delay": "220ms" } as React.CSSProperties} className="flex flex-wrap justify-center gap-3.5">
-            <Link href="/#contact" className="bg-[#EF2F29] px-8 py-[17px] text-xs uppercase tracking-[0.16em] text-[#050505] transition hover:-translate-y-[3px] hover:shadow-[0_20px_48px_rgba(239,47,41,.35)]">Nous contacter</Link>
+            <a href="https://www.facebook.com/piccoloteatrodibizerta/?locale=fr_FR" target="_blank" rel="noopener noreferrer" className="bg-[#EF2F29] px-8 py-[17px] text-xs uppercase tracking-[0.16em] text-[#050505] transition hover:-translate-y-[3px] hover:shadow-[0_20px_48px_rgba(239,47,41,.35)]">Contacter sur Facebook</a>
             <Link href="/#ateliers" className="border border-[rgba(243,239,233,.24)] px-8 py-[17px] text-xs uppercase tracking-[0.16em] transition hover:-translate-y-[3px] hover:border-[#F3EFE9]">Voir les autres ateliers</Link>
           </div>
         </div>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 type NavigationItem = {
@@ -12,14 +13,14 @@ type NavigationItem = {
 
 const navigation: readonly NavigationItem[] = [
   { label: "Accueil", href: "/#top" },
-  { label: "Le Centre", href: "/#centre" },
+  { label: "Le Centre", href: "/le-centre" },
   {
     label: "Ateliers",
     href: "/#ateliers",
     children: [
       { label: "Théâtre", href: "/ateliers/theatre" },
-      { label: "DNA", href: "/ateliers/dna" },
-      { label: "Mel Art", href: "/ateliers/mel-art" },
+      { label: "DNA", href: "/ateliers/danse" },
+      { label: "Mel Art", href: "/ateliers/peinture" },
     ],
   },
   {
@@ -31,12 +32,15 @@ const navigation: readonly NavigationItem[] = [
       { label: "Diffusion", href: "/activites/diffusion" },
     ],
   },
-  { label: "Événements", href: "/#evenements" },
-  { label: "Spectacles", href: "/#spectacles" },
-  { label: "Actualités", href: "/#actualites" },
+  { label: "Événements", href: "/evenements" },
+  { label: "Spectacles", href: "/spectacles" },
+  { label: "Actualités", href: "/actualites" },
 ] as const;
 
 export function SiteHeader() {
+  const pathname = usePathname();
+  const isSpectacle = pathname.startsWith("/spectacles/");
+  const isArticle = pathname.startsWith("/actualites/");
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [closingSubmenu, setClosingSubmenu] = useState<string | null>(null);
@@ -123,10 +127,10 @@ export function SiteHeader() {
 
         <div className="ml-auto flex items-center gap-[clamp(14px,1.7vw,30px)]">
           <Link
-            href="/#contact"
+            href={isSpectacle ? "#inscription" : isArticle ? "/actualites" : "/#contact"}
             className="whitespace-nowrap border border-[rgba(243,239,233,.22)] px-5 py-[11px] text-xs uppercase tracking-[0.16em] !text-[#F3EFE9] transition-colors duration-[400ms] hover:!border-[#EF2F29] hover:!bg-[#EF2F29] hover:!text-[#050505]"
           >
-            Nous contacter
+            {isSpectacle ? "Inscrire mon lieu" : isArticle ? "Le journal" : "Nous contacter"}
           </Link>
 
           <button

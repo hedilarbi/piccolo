@@ -67,7 +67,7 @@ export function ActivitiesJourney() {
               alt={step.title}
               fill
               sizes="100vw"
-              className="object-cover grayscale brightness-[0.55]"
+              className="object-cover brightness-[0.55]"
               style={{ transform: index === activeIndex ? `scale(${1.06 + localProgress * 0.1}) translate3d(0, ${localProgress * -22}px, 0)` : "scale(1.06)", transition: "transform 120ms linear" }}
             />
             <div className="absolute inset-0 bg-[radial-gradient(70%_60%_at_72%_40%,rgba(239,47,41,.2),transparent_68%)]" />

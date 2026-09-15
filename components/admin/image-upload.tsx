@@ -1,0 +1,10 @@
+"use client";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+
+export function ImageUpload({ name, label, ratio, current, required = false }: { name: string; label: string; ratio: string; current?: string; required?: boolean }) {
+  const [preview, setPreview] = useState(current || "");
+  const [temporary, setTemporary] = useState("");
+  useEffect(() => () => { if (temporary) URL.revokeObjectURL(temporary); }, [temporary]);
+  return <div><div className="mb-2 flex flex-wrap items-center justify-between gap-2"><span className="text-[10px] uppercase tracking-[.16em] text-[#726C66]">{label}{required ? " *" : ""}</span><span className="font-mono text-[9px] uppercase tracking-[.12em] text-[#EF2F29]">Ratio conseillé : {ratio}</span></div><label className="group relative block cursor-pointer overflow-hidden border border-dashed border-black/20 bg-[#EEEAE4] transition hover:border-[#EF2F29]" style={{ aspectRatio: ratio.replace(":", "/") }}>{preview ? <Image src={preview} alt="Aperçu de l’image" fill unoptimized={preview.startsWith("blob:")} sizes="700px" className="object-cover" /> : <span className="absolute inset-0 grid place-items-center text-center text-xs uppercase tracking-[.16em] text-[#77716B]">Choisir une image<br /><small className="mt-2 normal-case tracking-normal">JPG, PNG ou WebP · 8 Mo max.</small></span>}<span className="absolute inset-x-0 bottom-0 translate-y-full bg-black/75 px-4 py-3 text-center text-[10px] uppercase tracking-[.15em] text-white transition group-hover:translate-y-0">{preview ? "Remplacer l’image" : "Sélectionner"}</span><input name={name} type="file" accept="image/jpeg,image/png,image/webp" required={required && !current} className="sr-only" onChange={event => { const file = event.target.files?.[0]; if (!file) return; if (temporary) URL.revokeObjectURL(temporary); const url = URL.createObjectURL(file); setTemporary(url); setPreview(url); }} /></label>{current ? <input type="hidden" name={`${name}Current`} value={current} /> : null}</div>;
+}

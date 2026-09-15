@@ -3,20 +3,23 @@ import Link from "next/link";
 
 const navigation = [
   { label: "Accueil", href: "/#top" },
-  { label: "Le Centre", href: "/#centre" },
+  { label: "Le Centre", href: "/le-centre" },
   { label: "Ateliers", href: "/#ateliers" },
   { label: "Activités", href: "/#activites" },
-  { label: "Événements", href: "/#evenements" },
-  { label: "Spectacles", href: "/#spectacles" },
-  { label: "Actualités", href: "/#actualites" },
+  { label: "Événements", href: "/evenements" },
+  { label: "Spectacles", href: "/spectacles" },
+  { label: "Actualités", href: "/actualites" },
 ] as const;
 
-const socials = ["Instagram", "Facebook", "Vimeo", "LinkedIn"] as const;
+const socials = [
+  { label: "Facebook", href: "https://www.facebook.com/piccoloteatrodibizerta/?locale=fr_FR" },
+  { label: "Instagram", href: "https://www.instagram.com/piccolo_teatro_di_bizerta/" }
+] as const;
 
 const workshopLinks = [
   { label: "Théâtre", href: "/ateliers/theatre" },
-  { label: "DNA", href: "/ateliers/dna" },
-  { label: "Mel Art", href: "/ateliers/mel-art" },
+  { label: "DNA", href: "/ateliers/danse" },
+  { label: "Mel Art", href: "/ateliers/peinture" },
 ] as const;
 
 const activityLinks = [
@@ -41,17 +44,18 @@ export function SiteFooter() {
             className="mb-6 h-24 w-auto"
           />
           <p className="mb-6 max-w-[34ch] text-sm leading-7 text-muted">
-            Centre culturel et artistique dédié au théâtre, à la création et à
-            l’accompagnement des artistes.
+            Piccolo Teatro di Bizerta est un centre culturel à Bizerte dédié au théâtre, à la danse, à la peinture et à l’accompagnement de projets artistiques.
           </p>
           <div className="flex flex-wrap gap-x-5 gap-y-3">
             {socials.map((social) => (
               <a
-                key={social}
-                href="#contact"
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[11px] uppercase tracking-[0.18em] text-muted transition-colors hover:text-accent"
               >
-                {social}
+                {social.label}
               </a>
             ))}
           </div>
@@ -61,20 +65,18 @@ export function SiteFooter() {
           <h2 className={headingClass}>Nous trouver</h2>
           <address className="flex flex-col gap-2.5 text-sm not-italic leading-6 text-muted">
             <span>
-              12 rue des Coulisses
+              7VCF+G25, rue Habib Thameur
               <br />
-              1000 Bruxelles
+              Bizerte, Tunisie
             </span>
-            <a href="tel:+3220000000" className="transition-colors hover:text-foreground">
-              +32 2 000 00 00
-            </a>
-            <a
-              href="mailto:bonjour@piccoloteatro.be"
-              className="transition-colors hover:text-foreground"
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=7VCF%2BG25%2C%20Rue%20Habib%20Thameur%2C%20Bizerte" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="mt-2 text-[11px] uppercase tracking-[0.14em] text-accent transition-colors hover:text-foreground"
             >
-              bonjour@piccoloteatro.be
+              Itinéraire Google Maps
             </a>
-            <span>Mar — Sam · 10h — 19h</span>
           </address>
         </div>
 
@@ -108,25 +110,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h2 className={headingClass}>Newsletter</h2>
-          <p className="mb-5 text-sm leading-7 text-muted">
-            Les prochains rendez-vous, une fois par mois.
-          </p>
-          <div className="flex gap-3 border-b border-foreground/20 pb-2.5">
-            <input
-              type="email"
-              aria-label="Votre adresse e-mail"
-              placeholder="Votre e-mail"
-              className="min-w-0 flex-1 bg-transparent text-sm outline-none placeholder:text-subtle"
-            />
-            <button
-              type="button"
-              className="text-[11px] uppercase tracking-[0.18em] text-accent"
-            >
-              S’inscrire
-            </button>
-          </div>
-          <div className="mt-7 flex flex-wrap gap-4 text-[11px] text-subtle">
+          <div className="flex flex-col gap-4 text-[11px] text-subtle">
             <Link href="/mentions-legales">Mentions légales</Link>
             <Link href="/confidentialite">Confidentialité</Link>
             <span>© 2026</span>

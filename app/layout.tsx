@@ -16,6 +16,7 @@ const bodoni = Bodoni_Moda({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://piccoloteatro.tn"),
   title: { default: "Piccolo Teatro", template: "%s | Piccolo Teatro" },
   description:
     "Centre culturel et artistique dédié au théâtre, à la création et à l’accompagnement des artistes.",
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="fr" className={`${archivo.variable} ${bodoni.variable}`}>
+    <html lang="fr-TN" className={`${archivo.variable} ${bodoni.variable}`}>
       <body className="min-h-dvh bg-background text-foreground antialiased">
         {children}
       </body>

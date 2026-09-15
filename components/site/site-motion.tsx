@@ -105,8 +105,8 @@ export function SiteCursor() {
   const pathname = usePathname();
   const ringRef = useRef<HTMLDivElement>(null);
   const dotRef = useRef<HTMLDivElement>(null);
-  const isPainting = pathname.startsWith("/ateliers/mel-art");
-  const variant = pathname.startsWith("/ateliers/dna")
+  const isPainting = pathname.startsWith("/ateliers/peinture");
+  const variant = pathname.startsWith("/ateliers/danse")
     ? "dna"
     : pathname.startsWith("/ateliers/theatre")
       ? "theatre"

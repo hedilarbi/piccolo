@@ -4,27 +4,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
-const projects = [
-  { title: "Antigone, fragments", year: "2025", type: "Théâtre", category: "Théâtre", description: "Relecture chorale d’un texte fondateur.", image: "https://loremflickr.com/800/1000/theatre,stage,light?lock=61" },
-  { title: "Corps sonore", year: "2025", type: "Performance", category: "Performance", description: "Une partition pour six interprètes.", image: "https://loremflickr.com/800/1000/performance,dance,stage?lock=62" },
-  { title: "Atelier des ombres", year: "2024", type: "Arts visuels", category: "Arts visuels", description: "Installation lumière et matière.", image: "https://loremflickr.com/800/1000/art,installation,gallery?lock=63" },
-  { title: "La Traversée", year: "2024", type: "Production", category: "Production", description: "Création accompagnée en résidence.", image: "https://loremflickr.com/800/1000/rehearsal,actor,theatre?lock=64" },
-  { title: "Hors champ", year: "2023", type: "Audiovisuel", category: "Audiovisuel", description: "Court-métrage documentaire de plateau.", image: "https://loremflickr.com/800/1000/film,camera,shooting?lock=65" },
-  { title: "Chambre 4", year: "2023", type: "Théâtre", category: "Théâtre", description: "Huis clos contemporain en petite forme.", image: "https://loremflickr.com/800/1000/theatre,drama,portrait?lock=66" },
-  { title: "Matières premières", year: "2022", type: "Arts visuels", category: "Arts visuels", description: "Exposition des ateliers Mel Art.", image: "https://loremflickr.com/800/1000/exhibition,art,museum?lock=67" },
-  { title: "Écho", year: "2022", type: "Performance", category: "Performance", description: "Déambulation sonore dans le centre.", image: "https://loremflickr.com/800/1000/performance,street,art?lock=68" },
-] as const;
+type ProfessionalEvent = { title: string; slug: string; year: string; description: string; image: string };
 
-const filters = ["Tous", "Théâtre", "Performance", "Production", "Arts visuels", "Audiovisuel"] as const;
+const filters = ["Tous", "Théâtre"] as const;
 
-export function Portfolio() {
+export function Portfolio({ professionalEvents = [] }: { professionalEvents?: ProfessionalEvent[] }) {
   const [filter, setFilter] = useState<(typeof filters)[number]>("Tous");
   const [hovered, setHovered] = useState<string | null>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const wrapRef = useRef<HTMLDivElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
-  const visibleProjects = projects.filter(
+  const allProjects = [
+    ...professionalEvents.map(event => ({ ...event, type: "Spectacle", category: "Théâtre", href: `/spectacles/${event.slug}` })),
+  ];
+  const visibleProjects = allProjects.filter(
     (project) => filter === "Tous" || project.category === filter,
   );
 
@@ -86,13 +80,13 @@ export function Portfolio() {
             {visibleProjects.map((project) => (
               <Link
                 key={project.title}
-                href="#spectacles"
+                href={project.href}
                 onMouseEnter={() => setHovered(project.title)}
                 onMouseLeave={() => setHovered(null)}
                 className={`group flex h-full w-[clamp(180px,min(24vw,30svh),400px)] shrink-0 flex-col transition-[opacity,transform] duration-700 ease-[cubic-bezier(.16,1,.3,1)] hover:-translate-y-2.5 ${hovered && hovered !== project.title ? "opacity-40" : "opacity-100"}`}
               >
                 <div className="relative min-h-0 flex-1 overflow-hidden bg-[#0d0d0d] aspect-[3/4]">
-                  <Image src={project.image} alt={project.title} fill sizes="(max-width: 768px) 60vw, 24vw" className="object-cover grayscale brightness-[.8] transition duration-1000 ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.06] group-hover:grayscale-0 group-hover:brightness-105 group-hover:saturate-110" />
+                  <Image src={project.image} alt={project.title} fill sizes="(max-width: 768px) 60vw, 24vw" className="object-cover brightness-[.8] transition duration-1000 ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.06] group-hover:brightness-105 group-hover:saturate-110" />
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_40%,rgba(5,5,5,.9)_100%)]" />
                   <span className="absolute right-4 top-4 font-mono text-[10px] tracking-[0.16em] text-[#EF2F29]">{project.year}</span>
                   <div className="absolute inset-x-0 bottom-0 p-5">
@@ -104,6 +98,7 @@ export function Portfolio() {
                 <span className="mt-3 inline-flex shrink-0 items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-[#F3EFE9]">Voir le projet <i className="h-px w-[22px] bg-[#EF2F29]" /></span>
               </Link>
             ))}
+            {!visibleProjects.length ? <p className="w-[min(80vw,600px)] shrink-0 self-center font-display text-3xl text-[#AAA6A3]">Aucun spectacle publié.</p> : null}
           </div>
         </div>
 

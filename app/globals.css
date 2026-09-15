@@ -71,6 +71,15 @@
   }
 }
 
+@utility admin-table-button {
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 8px 12px;
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  &:hover { border-color: rgb(0 0 0 / 40%); }
+}
+
 @keyframes hero-light-up {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -173,11 +182,19 @@
 @keyframes chamber-breathe { 0%,100% { transform:translate(-50%,-50%) scale(1); opacity:.5; } 50% { transform:translate(-50%,-50%) scale(1.16); opacity:.85; } }
 @keyframes ring-pulse { 0% { transform:translate(-50%,-50%) scale(.72); opacity:0; } 18% { opacity:.55; } 100% { transform:translate(-50%,-50%) scale(1.5); opacity:0; } }
 @keyframes mote-float { 0% { transform:translateY(14px); opacity:0; } 25% { opacity:.9; } 100% { transform:translateY(-90px); opacity:0; } }
+@keyframes spectacle-ticker { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+@keyframes spectacle-dust { 0% { transform:translate3d(0,0,0); opacity:0; } 18% { opacity:.55; } 100% { transform:translate3d(14px,-120px,0); opacity:0; } }
+@keyframes spectacle-gate { 0%,100% { opacity:.34; } 50% { opacity:.72; } }
 .blueprint-grid { animation: blueprint-pan 24s linear infinite; }
 .sweep-beam { animation: sweep-beam 13s ease-in-out infinite; }
 .signal-blink { animation: signal-blink 2.4s ease-in-out infinite; }
 .activity-ticker { animation: activity-ticker 34s linear infinite; }
 .chamber-breathe { animation: chamber-breathe 9s ease-in-out infinite; }
+.spectacle-ticker { animation:spectacle-ticker 36s linear infinite; }
+.spectacle-dust { animation:spectacle-dust 12s linear infinite; }
+.spectacle-gate { animation:spectacle-gate 9s ease-in-out infinite; }
+.spectacle-poster[data-active="true"] { box-shadow:0 34px 80px rgb(0 0 0 / 60%), 0 0 60px rgb(239 47 41 / 18%); }
+.spectacle-poster[data-active="true"] .spectacle-poster-image { filter:brightness(.78) contrast(1.05); transform:scale(1.1); }
 
 @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
   html.has-site-cursor,
@@ -410,6 +427,19 @@ select {
   background: var(--accent);
   color: var(--accent-foreground);
 }
+
+.article-editor:empty::before { content: attr(data-placeholder); color: #918a84; pointer-events: none; }
+.article-editor p, .article-content p { margin: 0 0 22px; max-width: 66ch; font-size: clamp(16px,1.15vw,18px); line-height: 1.85; }
+.article-editor h2, .article-content h2 { margin: clamp(38px,5vh,64px) 0 20px; font-family: var(--font-bodoni), Georgia, serif; font-size: clamp(26px,3vw,42px); font-weight: 400; line-height: 1.08; }
+.article-editor h3, .article-content h3 { margin: 32px 0 16px; font-family: var(--font-bodoni), Georgia, serif; font-size: clamp(21px,2.2vw,31px); font-weight: 400; line-height: 1.15; }
+.article-content h2, .article-content h3 { scroll-margin-top: 130px; }
+.article-editor a, .article-content a { color: #ef2f29; text-decoration: underline; text-underline-offset: 3px; }
+.article-editor blockquote, .article-content blockquote { margin: clamp(32px,4.4vh,54px) 0; border-left: 2px solid #ef2f29; padding: clamp(20px,2.4vw,32px) 0 clamp(20px,2.4vw,32px) clamp(20px,2.6vw,34px); font-family: var(--font-bodoni), Georgia, serif; font-size: clamp(22px,2.4vw,34px); font-style: italic; line-height: 1.32; }
+.article-editor figure, .article-content figure { margin: clamp(32px,4.4vh,54px) 0; }
+.article-editor figure img, .article-content figure img { display: block; width: 100%; aspect-ratio: 16/10; object-fit: cover; }
+.article-editor figcaption, .article-content figcaption { margin-top: 12px; color: #8f8b88; font-family: ui-monospace, monospace; font-size: 11px; letter-spacing: .12em; }
+.article-content { color: #d6d1cb; }
+.article-content h2, .article-content h3, .article-content blockquote { color: #f3efe9; }
 
 @media (prefers-reduced-motion: reduce) {
   html {

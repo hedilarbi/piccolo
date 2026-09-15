@@ -1,0 +1,924 @@
+Contenus SEO à intégrer pour Piccolo Teatro
+Ce document rassemble les contenus finalisés des sept pages principales du site en français. Chaque chapitre commence par le paramétrage SEO, suit la structure du gabarit, fournit au moins six réponses AEO et se termine par le schéma JSON-LD correspondant.
+Les mentions Intégration sont des consignes internes à ne pas publier. L’adresse et les réseaux sociaux sont intégrés comme données de référence. Les calendriers d’ateliers, tarifs, disponibilités et conditions d’accompagnement sont à actualiser à chaque changement de saison.
+1 Accueil
+Paramétrage SEO
+Champ
+Valeur
+Permalien
+/
+Canonical
+https://piccoloteatro.tn/
+Title
+Piccolo Teatro di Bizerta | Centre culturel à Bizerte
+Meta description
+Piccolo Teatro di Bizerta, centre culturel à Bizerte : ateliers de théâtre, danse DNA, peinture Mel Art et accompagnement de projets artistiques.
+Mot-clé principal
+piccolo teatro di bizerta
+Mots-clés secondaires
+centre culturel bizerte, théâtre bizerte, ateliers artistiques bizerte, activités culturelles bizerte, spectacle bizerte, festival bizerte
+
+Gabarit visuel à conserver  Page Accueil
+01 Bannière
+Ancre HTML  #top
+Surtitre  Théâtre, danse, peinture et création
+H1  Piccolo Teatro di Bizerta, centre culturel à Bizerte
+À Bizerte, Piccolo Teatro di Bizerta accueille celles et ceux qui veulent faire du théâtre, danser, peindre ou découvrir une création. Le centre travaille aussi avec les artistes qui préparent un spectacle ou développent un projet culturel.
+Bouton  Découvrir les ateliers  |  /#ateliers
+Bouton  Présenter un projet artistique  |  /#activites
+02 Présentation du centre
+Ancre HTML  #centre
+Surtitre  Le centre
+H2  Un lieu de pratique et de création artistique à Bizerte
+Créé en 2020 par Mohamed Baraketi, Piccolo Teatro di Bizerta est un centre culturel consacré au théâtre. Il accueille aussi des activités de danse, de peinture et d’arts visuels.
+On peut y faire ses premiers pas dans une discipline, reprendre une pratique ou progresser avec un groupe. Les artistes viennent avec une idée à préciser, une création à organiser ou un spectacle à présenter à de nouveaux publics.
+Les familles trouvent sur chaque page le public concerné, le rythme des séances et le contact utile. Pour les artistes, trois accompagnements répondent à trois besoins différents : clarifier une idée, produire une création ou préparer sa diffusion.
+Champ
+Texte
+2020
+Création de Piccolo Teatro di Bizerta
+3 ateliers
+Théâtre, danse DNA et peinture Mel Art
+3 activités
+Production, incubation et diffusion artistique
+Adresse
+7VCF+G25, rue Habib Thameur, Bizerte
+
+03 Cartes des ateliers
+Ancre HTML  #ateliers
+Surtitre  Les ateliers
+H2  Choisir un atelier artistique à Bizerte
+Ici, on apprend en faisant. On joue une scène, on cherche un mouvement, on mélange une couleur, puis on recommence jusqu’à trouver plus d’aisance et de liberté.
+H3  Atelier théâtre
+Les enfants, les adolescents et les adultes apprennent à jouer, poser leur voix, habiter l’espace et improviser avec les autres. Foued Litaiem, acteur et metteur en scène, anime le cours adultes à raison de deux heures par semaine.
+Bouton  Voir les cours de théâtre  |  /ateliers/theatre
+H3  DNA — Dance Nation Academy
+DNA — Dance Nation Academy accueille les adolescents chaque samedi de 15 h 30 à 17 h. Le groupe apprend des enchaînements et travaille le rythme, la coordination, la mémoire et l’expression corporelle.
+Bouton  Voir le cours de danse DNA  |  /ateliers/danse
+H3  Mel Art — peinture et arts plastiques
+Avec Mel Art, les enfants de 4 à 8 ans et les adolescents dessinent, peignent et découvrent les matières à travers des projets adaptés à leur âge. Le thème guide la séance, mais chacun choisit ses couleurs et sa manière de créer.
+Bouton  Voir l’atelier peinture Mel Art  |  /ateliers/peinture
+04 Onglets des activités
+Ancre HTML  #activites
+Surtitre  Les activités
+H2  De l’idée artistique à la scène et au public
+L’accompagnement dépend de l’avancement du projet. L’incubation sert à préciser et tester une idée. La production organise la création, l’équipe et le budget. La diffusion prépare le spectacle pour les lieux qui correspondent à sa forme et à son public.
+H3  Production artistique
+Vous avez un spectacle à construire ? Piccolo Teatro vous aide à organiser l’équipe, les répétitions, le calendrier, le budget et les besoins techniques.
+Bouton  Comprendre la production artistique  |  /activites/production
+H3  Incubation artistique
+Votre idée cherche encore sa forme ? L’incubation vous aide à préciser l’intention, le public et les prochaines étapes du projet.
+Bouton  Comprendre l’incubation artistique  |  /activites/incubation
+H3  Diffusion de spectacles
+Votre création est prête à sortir du studio ? Piccolo Teatro vous aide à consolider le dossier, le format et les conditions d’accueil avant de contacter des lieux et des programmateurs.
+Bouton  Comprendre la diffusion artistique  |  /activites/diffusion
+05 Parcours
+Surtitre  Un écosystème culturel local
+H2  Un même lieu pour les ateliers et les projets artistiques
+On ne vient pas tous à Piccolo Teatro pour la même raison. Certains s’inscrivent à un atelier ; d’autres arrivent avec une idée de spectacle, une création en répétition ou une œuvre déjà prête à être présentée.
+À Bizerte, le même lieu accueille les habitants venus essayer une discipline, les artistes en répétition et les compagnies qui préparent une présentation. Les spectacles, les expositions et les rencontres prolongent ensuite ce travail devant le public.
+06 Agenda
+Ancre HTML  #evenements
+Surtitre  L’agenda
+H2  Spectacles et événements culturels à Bizerte
+Retrouvez ici les prochains spectacles, ateliers ponctuels, expositions et rencontres de Piccolo Teatro. Chaque événement affiche sa date, son horaire, son lieu et les informations utiles pour y participer.
+Intégration  Ne publier aucune carte de démonstration. Masquer les événements passés du flux principal ou les déplacer dans une archive clairement datée.
+Texte si aucun rendez-vous n’est publié
+Pour connaître la prochaine date, consultez Facebook et Instagram ou écrivez directement à l’équipe de Piccolo Teatro.
+Bouton  Voir les annonces sur Facebook  |  Lien externe
+07 Projets et temps forts
+Ancre HTML  #spectacles
+Surtitre  Les projets
+H2  Les projets présentés par Piccolo Teatro à Bizerte
+La programmation de Piccolo Teatro réunit théâtre contemporain, performance, danse et arts visuels. Le Festival El Piccolo, les créations invitées et les expositions font découvrir au public le travail d’artistes tunisiens et internationaux.
+H3  Festival El Piccolo de Théâtre Contemporain
+La quatrième édition s’est déroulée à Bizerte du 22 au 26 juillet 2026, avec des spectacles, des ateliers et des échanges artistiques.
+H3  THE CALL
+La performance de Malou Redarès a été présentée à Bizerte dans le cadre du projet d’échange culturel « Identités de mouvement ».
+H3  Les créations de Mel Art
+Piccolo Teatro a exposé les tableaux de jeunes participants à Mel Art pendant le Festival El Piccolo de Théâtre Contemporain.
+Intégration  Associer chaque projet à ses photographies, artistes, partenaires, dates et crédits réels. Le festival 2026 est une archive et ne doit jamais être formulé comme un rendez-vous futur.
+08 Adresse et contact
+Ancre HTML  #contact
+Surtitre  Venir à Piccolo Teatro
+H2  Piccolo Teatro se trouve rue Habib Thameur à Bizerte
+Adresse : 7VCF+G25, rue Habib Thameur, Bizerte. Utilisez le lien d’itinéraire pour localiser le centre avant votre venue.
+Bouton  Ouvrir l’itinéraire Google Maps  |  Lien externe
+Une question sur un atelier, un horaire ou une inscription ? Écrivez directement à l’équipe sur Facebook ou Instagram.
+Bouton  Contacter Piccolo Teatro sur Facebook  |  Lien externe
+Bouton  Suivre Piccolo Teatro sur Instagram  |  Lien externe
+09 FAQ à ajouter
+H2  Questions fréquentes sur Piccolo Teatro à Bizerte
+Qu’est-ce que Piccolo Teatro di Bizerta ?
+Piccolo Teatro di Bizerta, aussi appelé Piccolo Teatro, est un centre culturel créé à Bizerte en 2020. Il propose des ateliers de théâtre, de danse et de peinture, et accompagne des projets artistiques par la production, l’incubation et la diffusion.
+Où se trouve Piccolo Teatro à Bizerte ?
+Piccolo Teatro se trouve au 7VCF+G25, rue Habib Thameur, Bizerte, en Tunisie. Ouvrez l’itinéraire Google Maps depuis la page pour rejoindre facilement le centre.
+Quels ateliers artistiques sont proposés à Bizerte ?
+Piccolo Teatro propose du théâtre pour enfants, adolescents et adultes, un cours de danse DNA pour les adolescents et un atelier de peinture Mel Art pour les enfants de 4 à 8 ans et les adolescents.
+Comment connaître les horaires et les tarifs des ateliers ?
+Les pages Théâtre et DNA affichent leurs horaires. Pour Mel Art, demandez directement le créneau correspondant à l’âge du participant. Pour connaître le tarif et réserver une place, écrivez à Piccolo Teatro sur Facebook ou Instagram.
+Piccolo Teatro accompagne-t-il les artistes en Tunisie ?
+Oui. Piccolo Teatro accompagne les artistes, les compagnies et les porteurs de projets culturels en Tunisie. L’équipe intervient dès l’idée, pendant la préparation de la production ou au moment de présenter l’œuvre à des lieux et à des publics.
+Comment suivre les spectacles et événements de Piccolo Teatro ?
+Consultez l’agenda du site ainsi que les comptes Facebook et Instagram de Piccolo Teatro. Vous y trouverez les dates, les horaires, les lieux et les informations de réservation des prochains rendez-vous.
+10 Appel à l’action final
+Ancre HTML  #contact-final
+H2  Rejoignez Piccolo Teatro à Bizerte
+Vous souhaitez rejoindre un atelier, découvrir un événement ou présenter un projet artistique ? Choisissez l’activité qui vous correspond ou écrivez directement à Piccolo Teatro.
+Bouton  Choisir un atelier  |  /#ateliers
+Bouton  Écrire sur Facebook  |  Lien externe
+Consignes pour les liens et les visuels
+Afficher l’adresse exactement sous la forme « 7VCF+G25, rue Habib Thameur, Bizerte » et relier le bouton au lien Google Maps fourni.
+Conserver les deux noms de marque : « Piccolo Teatro di Bizerta » dans l’identification officielle et « Piccolo Teatro » dans les formulations courtes.
+Remplacer toute donnée de démonstration, notamment les coordonnées étrangères, les faux compteurs et les événements non confirmés.
+Lier les cartes ateliers et activités à leurs pages dédiées. Ne pas dupliquer l’intégralité de leurs textes sur l’accueil.
+Exemples de textes alternatifs, à employer uniquement si les photographies montrent bien ces scènes :
+Façade ou entrée de Piccolo Teatro rue Habib Thameur à Bizerte
+Participants à un atelier artistique au Piccolo Teatro de Bizerte
+Schema markup de la page
+JSON-LD à intégrer sur https://piccoloteatro.tn/. Les informations déclarées doivent rester cohérentes avec la page publiée.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type":"Organization","@id":"https://piccoloteatro.tn/#organization","name":"Piccolo Teatro di Bizerta","alternateName":"Piccolo Teatro","url":"https://piccoloteatro.tn/","address":{"@type":"PostalAddress","streetAddress":"7VCF+G25, rue Habib Thameur","addressLocality":"Bizerte","addressCountry":"TN"},"location":{"@id":"https://piccoloteatro.tn/#place"},"sameAs":["https://www.facebook.com/piccoloteatrodibizerta/?locale=fr_FR","https://www.instagram.com/piccolo_teatro_di_bizerta/"]},
+    {"@type":"PerformingArtsTheater","@id":"https://piccoloteatro.tn/#place","name":"Piccolo Teatro di Bizerta","alternateName":"Piccolo Teatro","url":"https://piccoloteatro.tn/","address":{"@type":"PostalAddress","streetAddress":"7VCF+G25, rue Habib Thameur","addressLocality":"Bizerte","addressCountry":"TN"},"hasMap":"https://www.google.com/maps/search/?api=1&query=7VCF%2BG25%2C%20Rue%20Habib%20Thameur%2C%20Bizerte","sameAs":["https://www.facebook.com/piccoloteatrodibizerta/?locale=fr_FR","https://www.instagram.com/piccolo_teatro_di_bizerta/"]},
+    {"@type":"WebSite","@id":"https://piccoloteatro.tn/#website","url":"https://piccoloteatro.tn/","name":"Piccolo Teatro di Bizerta","alternateName":"Piccolo Teatro","inLanguage":"fr-TN","publisher":{"@id":"https://piccoloteatro.tn/#organization"}},
+    {"@type":"WebPage","@id":"https://piccoloteatro.tn/#webpage","url":"https://piccoloteatro.tn/","name":"Piccolo Teatro di Bizerta | Centre culturel à Bizerte","description":"Piccolo Teatro di Bizerta, centre culturel à Bizerte : ateliers de théâtre, danse DNA, peinture Mel Art et accompagnement de projets artistiques.","inLanguage":"fr-TN","isPartOf":{"@id":"https://piccoloteatro.tn/#website"},"publisher":{"@id":"https://piccoloteatro.tn/#organization"},"about":{"@id":"https://piccoloteatro.tn/#organization"},"mainEntity":{"@id":"https://piccoloteatro.tn/#place"}}
+  ]
+}
+</script>
+2 Atelier théâtre
+Paramétrage SEO
+Champ
+Valeur
+Permalien
+/ateliers/theatre
+Canonical
+https://piccoloteatro.tn/ateliers/theatre
+Title
+Cours de théâtre à Bizerte | Piccolo Teatro
+Meta description
+Cours de théâtre à Bizerte pour enfants, adolescents et adultes : jeu, voix, corps et improvisation. Découvrez les ateliers de Piccolo Teatro.
+Mot-clé principal
+cours de théâtre bizerte
+Mots-clés secondaires
+atelier théâtre bizerte, cours de théâtre adulte bizerte, cours de théâtre enfant bizerte, club théâtre bizerte, cours de théâtre tunisie, improvisation théâtrale
+
+Gabarit visuel à conserver  Page Atelier théâtre
+01 Bannière
+Lien de retour  Retour aux ateliers  |  /#ateliers
+Surtitre  Jeu, voix, corps et imagination
+H1  Cours de théâtre à Bizerte pour enfants, adolescents et adultes
+À Piccolo Teatro, le théâtre se découvre sur scène. Les enfants, les adolescents et les adultes jouent, improvisent, travaillent leur voix et apprennent à construire une scène avec les autres.
+Bouton  Demander une inscription  |  Lien externe
+Bouton  Voir les informations pratiques  |  #pratique
+02 Réponse essentielle
+Surtitre  Le cours en bref
+H2  Un atelier hebdomadaire pour apprendre en jouant
+Les cours de théâtre accueillent les enfants, les adolescents et les adultes dans des groupes adaptés. Foued Litaiem, acteur et metteur en scène, anime le cours adultes. Les séances durent deux heures et se tiennent le mercredi ou le jeudi, de 18 h 30 à 20 h 30.
+Pour rejoindre un groupe, indiquez simplement l’âge du participant, son expérience et le jour qui lui convient. L’équipe vous transmet le tarif et finalise l’inscription avec vous.
+03 Contenu des séances
+H2  Que travaille-t-on dans un cours de théâtre ?
+H3  Présence et expression corporelle
+Les exercices apprennent à occuper l’espace et à rendre une intention visible avec le regard, le geste et le déplacement.
+H3  Voix, souffle et diction
+Le groupe travaille le souffle, l’articulation et le rythme pour faire entendre un texte sans forcer et donner du sens aux silences.
+H3  Improvisation théâtrale
+À partir d’une consigne, les participants inventent un personnage et font avancer une scène sans texte préparé, en s’appuyant sur les idées de leurs partenaires.
+H3  Interprétation et mise en scène
+Le travail d’une scène aide à comprendre ce que veut le personnage, pourquoi il agit et comment ses déplacements changent la relation avec les autres.
+H3  Écoute et création collective
+Dans les exercices collectifs, chacun observe ses partenaires, propose une idée et apprend à construire sans effacer le jeu des autres. Cette attention rend les scènes plus justes et plus vivantes.
+04 Publics et progression
+H2  Un apprentissage adapté à chaque groupe
+H3  Enfants
+Par le jeu, les enfants mobilisent leur imagination, leur voix et leur corps. Ils apprennent aussi à écouter une consigne et à inventer avec les autres.
+H3  Adolescents
+Les adolescents essaient différents personnages, affirment leur expression et transforment leurs idées en situations de scène.
+H3  Adultes débutants ou pratiquants
+Débutant ou pratiquant, chaque adulte avance à partir de son expérience. Le travail régulier aide à se sentir plus libre sur scène, à mieux écouter ses partenaires et à donner plus de justesse au jeu.
+Chacun progresse à son rythme. En retrouvant les mêmes bases dans de nouveaux exercices, les participants prennent leurs repères, osent davantage et se libèrent du regard des autres.
+05 Déroulement
+H2  Comment se déroule une séance ?
+La séance commence par un échauffement du corps et de la voix. Le groupe enchaîne avec des jeux d’écoute, des improvisations, puis le travail d’une scène ou d’un texte. En fin de séance, chacun reçoit des indications simples pour continuer à progresser.
+Au fil des semaines, les exercices deviennent des scènes plus construites. Le groupe apprend alors à tenir un personnage, à suivre une mise en scène et à jouer une séquence du début à la fin.
+06 Informations pratiques
+Ancre HTML  #pratique
+H2  Cours de théâtre à Bizerte : horaires et inscription
+Champ
+Texte
+Public
+Enfants, adolescents et adultes
+Adultes
+Une séance de 2 heures par semaine
+Créneaux adultes
+Mercredi ou jeudi, de 18 h 30 à 20 h 30
+Cours adultes
+Foued Litaiem, acteur et metteur en scène
+Lieu
+7VCF+G25, rue Habib Thameur, Bizerte
+Inscription
+Par message auprès de Piccolo Teatro
+
+Bouton  Demander les places disponibles  |  Lien externe
+07 FAQ à ajouter
+H2  Questions fréquentes sur les cours de théâtre à Bizerte
+Peut-on commencer le théâtre sans expérience ?
+Oui. Les cours de théâtre de Piccolo Teatro accueillent les débutants. Les exercices sont progressifs et permettent de découvrir la voix, le corps, l’improvisation et le jeu collectif. Précisez votre âge lors de la demande afin d’être orienté vers le groupe adapté.
+À quels publics s’adresse l’atelier théâtre ?
+Piccolo Teatro accueille trois groupes : enfants, adolescents et adultes. Chaque groupe avance avec des exercices et un rythme adaptés à son âge.
+Quels sont les horaires du cours de théâtre pour adultes ?
+Le cours adultes dure deux heures par semaine. Il se déroule le mercredi ou le jeudi, de 18 h 30 à 20 h 30. L’équipe vous indique le jour correspondant à votre groupe lors de l’inscription.
+Qui anime le cours de théâtre pour adultes ?
+Le cours de théâtre pour adultes est animé par Foued Litaiem, acteur et metteur en scène. Il accompagne le groupe dans le jeu, l’improvisation, l’interprétation et la construction des scènes.
+Que faut-il préparer pour une première séance ?
+Venez avec une tenue confortable qui permet de bouger librement. Aucun texte à apprendre ni niveau préalable n’est nécessaire pour commencer.
+Où ont lieu les cours de théâtre à Bizerte ?
+Les cours ont lieu à Piccolo Teatro, 7VCF+G25, rue Habib Thameur, Bizerte. Le lien Google Maps présent sur le site vous conduit directement au centre.
+08 Appel à l’action final
+H2  Essayez le théâtre à Bizerte
+Vous avez envie de monter sur scène, même pour la première fois ? Envoyez votre âge et vos disponibilités à l’équipe de Piccolo Teatro pour rejoindre le groupe qui vous correspond.
+Bouton  Contacter Piccolo Teatro sur Facebook  |  Lien externe
+Bouton  Découvrir les autres ateliers  |  /#ateliers
+Consignes pour les liens et les visuels
+Afficher les créneaux adultes du mercredi et du jeudi, puis les mettre à jour dès que le planning change.
+Ne pas conserver la mention « dès 6 ans » sans confirmation. Le contenu validé distingue seulement enfants, adolescents et adultes.
+Ajouter une photo réelle de Foued Litaiem uniquement avec crédit et autorisation ; ne pas utiliser un portrait générique.
+Le premier CTA mène vers le compte Facebook officiel tant qu’aucun formulaire d’inscription dédié n’est disponible.
+Exemples de textes alternatifs, à employer uniquement si les photographies montrent bien ces scènes :
+Participants à un cours de théâtre au Piccolo Teatro de Bizerte
+Exercice d’improvisation théâtrale encadré par Foued Litaiem
+Schema markup de la page
+JSON-LD à intégrer sur https://piccoloteatro.tn/ateliers/theatre. Les informations déclarées doivent rester cohérentes avec la page publiée.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type":"WebPage","@id":"https://piccoloteatro.tn/ateliers/theatre#webpage","url":"https://piccoloteatro.tn/ateliers/theatre","name":"Cours de théâtre à Bizerte | Piccolo Teatro","description":"Cours de théâtre à Bizerte pour enfants, adolescents et adultes : jeu, voix, corps et improvisation. Découvrez les ateliers de Piccolo Teatro.","inLanguage":"fr-TN","isPartOf":{"@id":"https://piccoloteatro.tn/#website"},"publisher":{"@id":"https://piccoloteatro.tn/#organization"},"mainEntity":{"@id":"https://piccoloteatro.tn/ateliers/theatre#service"},"breadcrumb":{"@id":"https://piccoloteatro.tn/ateliers/theatre#breadcrumb"}},
+    {"@type":"Service","@id":"https://piccoloteatro.tn/ateliers/theatre#service","name":"Cours de théâtre à Bizerte","description":"Cours de théâtre à Bizerte pour enfants, adolescents et adultes : jeu, voix, corps et improvisation. Découvrez les ateliers de Piccolo Teatro.","url":"https://piccoloteatro.tn/ateliers/theatre","serviceType":"Cours de théâtre à Bizerte","provider":{"@id":"https://piccoloteatro.tn/#organization"},"audience":{"@type":"Audience","audienceType":"Enfants, adolescents et adultes intéressés par la pratique théâtrale à Bizerte"},"areaServed":{"@type":"City","name":"Bizerte"}},
+    {"@type":"BreadcrumbList","@id":"https://piccoloteatro.tn/ateliers/theatre#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://piccoloteatro.tn/"},{"@type":"ListItem","position":2,"name":"Atelier théâtre","item":"https://piccoloteatro.tn/ateliers/theatre"}]}
+  ]
+}
+</script>
+3 Atelier danse DNA
+Paramétrage SEO
+Champ
+Valeur
+Permalien
+/ateliers/danse
+Canonical
+https://piccoloteatro.tn/ateliers/danse
+Title
+Cours de danse pour ados à Bizerte | DNA Piccolo
+Meta description
+DNA — Dance Nation Academy propose un cours de danse pour adolescents à Bizerte, le samedi de 15 h 30 à 17 h. Découvrez le programme et inscrivez-vous.
+Mot-clé principal
+cours de danse bizerte
+Mots-clés secondaires
+cours de danse ados bizerte, atelier danse bizerte, club de danse bizerte, salle de danse bizerte, cours de danse tunisie, expression corporelle
+
+Gabarit visuel à conserver  Page Atelier danse DNA
+01 Bannière
+Lien de retour  Retour aux ateliers  |  /#ateliers
+Surtitre  DNA — Dance Nation Academy
+H1  Cours de danse pour adolescents à Bizerte avec DNA
+DNA — Dance Nation Academy organise à Piccolo Teatro un cours de danse pour les adolescents. Le groupe se retrouve chaque samedi de 15 h 30 à 17 h pour apprendre des enchaînements et danser ensemble.
+Bouton  Appeler le 56 777 780  |  tel:+21656777780
+Bouton  Voir les informations pratiques  |  #pratique
+02 Réponse essentielle
+Surtitre  Le cours en bref
+H2  Un atelier de danse hebdomadaire pour les adolescents
+Le cours DNA s’adresse aux adolescents qui veulent découvrir la danse, reprendre après une pause ou gagner en aisance. Le travail part du mouvement, de la musique et du plaisir de danser ensemble.
+Les élèves apprennent des enchaînements, suivent les repères de la musique et prennent confiance dans l’espace. Pour s’inscrire, il suffit d’appeler le 56 777 780 ou le 24 915 817.
+03 Compétences travaillées
+H2  Ce que les adolescents développent en danse
+H3  Rythme et musicalité
+En écoutant la musique, les adolescents repèrent les temps, les accents et les changements d’énergie pour placer leurs mouvements avec précision.
+H3  Coordination
+Ils apprennent à coordonner les bras, les jambes, le regard et les déplacements sans perdre le tempo ni la direction.
+H3  Mémoire chorégraphique
+Le groupe observe chaque séquence, la décompose puis la répète. Les mouvements s’enchaînent ensuite dans une chorégraphie dansée ensemble.
+H3  Expression corporelle
+Chacun donne une intention au mouvement, joue avec l’amplitude et l’énergie, puis trouve peu à peu sa manière de danser.
+H3  Confiance dans le groupe
+Danser avec les autres apprend à prendre sa place, à respecter l’espace du groupe et à garder ses repères quand vient le moment de passer devant les autres.
+04 Déroulement
+H2  Comment se déroule une séance DNA ?
+La séance commence par une mise en mouvement, puis le groupe travaille la technique et apprend une courte phrase chorégraphique. Chaque passage est repris étape par étape avant de danser l’enchaînement tous ensemble.
+D’une semaine à l’autre, les gestes deviennent plus fluides et les enchaînements plus faciles à retenir. Les adolescents apprennent aussi à danser devant les autres sans perdre leur énergie ni leurs repères.
+05 Informations pratiques
+Ancre HTML  #pratique
+H2  Cours DNA à Bizerte : horaire, lieu et inscription
+Champ
+Texte
+Atelier
+DNA — Dance Nation Academy
+Public
+Adolescents
+Jour
+Samedi
+Horaire
+15 h 30 à 17 h
+Durée
+1 h 30 par séance
+Lieu
+7VCF+G25, rue Habib Thameur, Bizerte
+Téléphones
+56 777 780 / 24 915 817
+Tarif et inscription
+Renseignements par téléphone
+
+Bouton  Appeler le 56 777 780  |  tel:+21656777780
+Bouton  Appeler le 24 915 817  |  tel:+21624915817
+06 FAQ à ajouter
+H2  Questions fréquentes sur le cours de danse DNA à Bizerte
+À qui s’adresse le cours de danse DNA ?
+DNA — Dance Nation Academy accueille les adolescents à Piccolo Teatro. Le groupe réunit aussi bien des débutants que des jeunes qui ont déjà pratiqué la danse.
+Quel est l’horaire du cours de danse à Bizerte ?
+Le cours DNA a lieu chaque samedi de 15 h 30 à 17 h. La séance dure une heure trente.
+Un adolescent débutant peut-il rejoindre DNA ?
+Oui. Les mouvements et les enchaînements sont décomposés étape par étape. Chaque nouvel élève prend ses repères avec la musique et progresse au rythme du groupe.
+Que travaille-t-on pendant le cours DNA ?
+Chaque séance associe une mise en mouvement, des exercices techniques et l’apprentissage d’un enchaînement. Les adolescents travaillent le rythme, la coordination, la mémoire et l’expression corporelle.
+Comment s’inscrire au cours DNA ?
+Appelez le 56 777 780 ou le 24 915 817 en indiquant l’âge de l’adolescent. L’équipe vous renseigne sur le tarif, les places et la tenue à prévoir.
+Où se déroule l’atelier de danse ?
+Le cours a lieu à Piccolo Teatro, 7VCF+G25, rue Habib Thameur, Bizerte. Consultez l’itinéraire Google Maps depuis le site et arrivez quelques minutes avant le début de la séance.
+07 Appel à l’action final
+H2  Inscrivez votre adolescent au cours DNA
+Votre adolescent aime danser et veut progresser dans un groupe ? Appelez l’un des deux numéros pour réserver sa place au cours du samedi.
+Bouton  Appeler le 56 777 780  |  tel:+21656777780
+Bouton  Découvrir les autres ateliers  |  /#ateliers
+Consignes pour les liens et les visuels
+Afficher les deux numéros dans des liens tel: cliquables sur mobile et mesurer les clics comme conversions.
+Présenter le cours actuel comme une activité destinée aux adolescents.
+Décrire la pratique par les compétences travaillées et ajouter le nom d’un style uniquement si DNA l’intègre à son programme.
+Mettre à jour le samedi 15 h 30–17 h dès que le planning saisonnier change.
+Exemples de textes alternatifs, à employer uniquement si les photographies montrent bien ces scènes :
+Adolescents pendant le cours de danse DNA à Piccolo Teatro Bizerte
+Apprentissage d’un enchaînement chorégraphique avec Dance Nation Academy
+Schema markup de la page
+JSON-LD à intégrer sur https://piccoloteatro.tn/ateliers/danse. Les informations déclarées doivent rester cohérentes avec la page publiée.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type":"WebPage","@id":"https://piccoloteatro.tn/ateliers/danse#webpage","url":"https://piccoloteatro.tn/ateliers/danse","name":"Cours de danse pour ados à Bizerte | DNA Piccolo","description":"DNA — Dance Nation Academy propose un cours de danse pour adolescents à Bizerte, le samedi de 15 h 30 à 17 h. Découvrez le programme et inscrivez-vous.","inLanguage":"fr-TN","isPartOf":{"@id":"https://piccoloteatro.tn/#website"},"publisher":{"@id":"https://piccoloteatro.tn/#organization"},"mainEntity":{"@id":"https://piccoloteatro.tn/ateliers/danse#service"},"breadcrumb":{"@id":"https://piccoloteatro.tn/ateliers/danse#breadcrumb"}},
+    {"@type":"Service","@id":"https://piccoloteatro.tn/ateliers/danse#service","name":"Cours de danse pour adolescents à Bizerte","description":"DNA — Dance Nation Academy propose un cours de danse pour adolescents à Bizerte, le samedi de 15 h 30 à 17 h. Découvrez le programme et inscrivez-vous.","url":"https://piccoloteatro.tn/ateliers/danse","serviceType":"Cours de danse pour adolescents à Bizerte","provider":{"@id":"https://piccoloteatro.tn/#organization"},"audience":{"@type":"Audience","audienceType":"Adolescents souhaitant pratiquer la danse à Bizerte"},"areaServed":{"@type":"City","name":"Bizerte"},"availableChannel":[{"@type":"ServiceChannel","serviceLocation":{"@id":"https://piccoloteatro.tn/#place"},"servicePhone":{"@type":"ContactPoint","telephone":"+21656777780","contactType":"inscription à l’atelier DNA","availableLanguage":"fr"}},{"@type":"ServiceChannel","serviceLocation":{"@id":"https://piccoloteatro.tn/#place"},"servicePhone":{"@type":"ContactPoint","telephone":"+21624915817","contactType":"inscription à l’atelier DNA","availableLanguage":"fr"}}]},
+    {"@type":"BreadcrumbList","@id":"https://piccoloteatro.tn/ateliers/danse#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://piccoloteatro.tn/"},{"@type":"ListItem","position":2,"name":"Atelier danse DNA","item":"https://piccoloteatro.tn/ateliers/danse"}]}
+  ]
+}
+</script>
+4 Atelier peinture Mel Art
+Paramétrage SEO
+Champ
+Valeur
+Permalien
+/ateliers/peinture
+Canonical
+https://piccoloteatro.tn/ateliers/peinture
+Title
+Atelier peinture enfant à Bizerte | Mel Art Piccolo
+Meta description
+Mel Art propose un atelier de peinture et d’arts plastiques à Bizerte pour les enfants et adolescents : couleurs, dessin, matières et créativité.
+Mot-clé principal
+atelier peinture bizerte
+Mots-clés secondaires
+atelier peinture enfant bizerte, club peinture bizerte, cours de peinture, arts plastiques, atelier arts plastiques, mel art bizerte
+
+Gabarit visuel à conserver  Page Atelier peinture Mel Art
+01 Bannière
+Lien de retour  Retour aux ateliers  |  /#ateliers
+Surtitre  Mel Art — couleurs, formes et matières
+H1  Atelier de peinture pour enfants et adolescents à Bizerte
+L’atelier Mel Art accueille à Piccolo Teatro les enfants de 4 à 8 ans et les adolescents. Ils dessinent, mélangent les couleurs, explorent les matières et transforment leurs idées en images.
+Bouton  Demander une inscription  |  Lien externe
+Bouton  Découvrir les activités  |  #programme
+02 Réponse essentielle
+Surtitre  L’atelier en bref
+H2  Apprendre la peinture en créant librement
+Chaque séance part d’un thème, d’une image ou d’une matière. Les jeunes observent, choisissent leurs couleurs, testent plusieurs outils et composent une création qui leur ressemble.
+Les plus jeunes apprennent par le geste, le jeu et les mélanges. Les adolescents vont plus loin dans le dessin, la composition et la construction d’un univers personnel.
+03 Programme
+Ancre HTML  #programme
+H2  Que fait-on dans un atelier Mel Art ?
+H3  Couleurs et mélanges
+Les enfants mélangent les couleurs, créent leurs propres nuances et découvrent comment une palette change l’ambiance d’une image.
+H3  Dessin et observation
+Ils apprennent à regarder une forme, à en retenir les lignes principales et à placer les éléments dans la feuille avant de dessiner.
+H3  Peinture et gestes
+Au fil des projets, ils essaient le pinceau, les aplats, les traces et les superpositions pour voir comment chaque geste transforme la peinture.
+H3  Matières et arts plastiques
+Papier, textures et collage viennent compléter la peinture. Les jeunes combinent les matières pour raconter une histoire autrement.
+H3  Présentation des créations
+À la fin d’un projet, chacun montre sa création, explique ses choix avec ses mots et découvre le travail des autres.
+04 Publics
+H2  Des propositions adaptées aux enfants et aux adolescents
+H3  Enfants de 4 à 8 ans
+Les enfants découvrent les couleurs avec leurs mains, leurs pinceaux et différents supports. Ils apprennent à guider leur geste tout en gardant le plaisir de créer.
+H3  Adolescents
+Les adolescents affinent leur regard, construisent leurs compositions et développent une manière plus personnelle de dessiner et de peindre.
+Au moment de l’inscription, l’équipe oriente chaque participant vers le groupe correspondant à son âge et lui donne les horaires ainsi que la liste du matériel à prévoir.
+05 Bénéfices
+H2  Ce que les jeunes développent avec la peinture
+H3  Observation
+La peinture invite à regarder vraiment : une forme, une proportion, un détail ou la manière dont deux couleurs réagissent ensemble.
+H3  Motricité et précision
+En changeant d’outil, les jeunes ajustent leur geste, apprennent à doser la pression et coordonnent mieux l’œil et la main.
+H3  Imagination
+Un même thème donne naissance à des créations très différentes. Chacun cherche ses idées et apprend à assumer ses choix.
+H3  Expression
+Une image devient une façon de raconter une histoire, partager une sensation ou montrer son propre point de vue.
+06 Informations pratiques
+Ancre HTML  #pratique
+H2  Atelier Mel Art à Bizerte : publics et inscription
+Champ
+Texte
+Discipline
+Peinture, dessin et arts plastiques
+Publics
+Enfants de 4 à 8 ans et adolescents
+Niveau
+Découverte et progression selon le groupe
+Lieu
+7VCF+G25, rue Habib Thameur, Bizerte
+Horaires
+Demandez le créneau du groupe correspondant à l’âge du participant
+Matériel
+Matériel de base fourni ; l’équipe précise les fournitures personnelles selon le projet
+Tarif
+Demandez le tarif du groupe au moment de l’inscription
+
+Bouton  Écrire à Piccolo Teatro sur Instagram  |  Lien externe
+07 FAQ à ajouter
+H2  Questions fréquentes sur l’atelier peinture Mel Art à Bizerte
+À partir de quel âge peut-on rejoindre Mel Art ?
+Mel Art accueille les enfants de 4 à 8 ans ainsi que les adolescents. Indiquez l’âge du participant lors de l’inscription pour rejoindre le bon groupe.
+Faut-il savoir dessiner pour participer ?
+Non. L’atelier est ouvert aux débutants. Les enfants découvrent progressivement le dessin, la peinture, les couleurs et les matières, sans modèle imposé ni niveau technique à atteindre avant de commencer.
+Quelle est la différence entre peinture et arts plastiques ?
+La peinture travaille surtout la couleur, les pigments et le geste. Les arts plastiques élargissent la création au dessin, au collage, au papier et aux textures. Mel Art réunit ces pratiques au fil des projets.
+Le matériel de peinture est-il fourni ?
+Le matériel de base est prévu pour les activités de l’atelier. Quand un projet demande une fourniture personnelle ou une tenue particulière, l’équipe l’indique avant la séance.
+Les créations sont-elles exposées ?
+Oui. Piccolo Teatro présente aussi le travail des jeunes participants lors de ses événements. Des tableaux réalisés à Mel Art ont été exposés pendant le Festival El Piccolo de Théâtre Contemporain.
+Où a lieu l’atelier Mel Art à Bizerte ?
+L’atelier se déroule à Piccolo Teatro, 7VCF+G25, rue Habib Thameur, Bizerte. Le lien Google Maps présent sur le site vous conduit directement au centre.
+08 Appel à l’action final
+H2  Inscrivez votre enfant à l’atelier Mel Art
+Votre enfant ou adolescent aime dessiner, peindre et inventer ? Indiquez son âge à l’équipe pour connaître son groupe Mel Art, ses horaires et le matériel nécessaire.
+Bouton  Contacter Piccolo Teatro sur Instagram  |  Lien externe
+Bouton  Découvrir les autres ateliers  |  /#ateliers
+Consignes pour les liens et les visuels
+Présenter Mel Art comme un atelier pour les enfants de 4 à 8 ans et les adolescents.
+Ajouter le calendrier et le tarif dans la page dès leur mise à jour par Mel Art.
+Relier les œuvres exposées à leur événement, leur année et, lorsque cela s’applique, au prénom de l’auteur avec autorisation parentale.
+Utiliser « arts plastiques » dans le texte naturel, sans remplacer le nom de l’offre « Mel Art » ni surcharger les titres.
+Exemples de textes alternatifs, à employer uniquement si les photographies montrent bien ces scènes :
+Enfants pendant un atelier de peinture Mel Art à Piccolo Teatro Bizerte
+Créations en arts plastiques réalisées par les jeunes participants de Mel Art
+Schema markup de la page
+JSON-LD à intégrer sur https://piccoloteatro.tn/ateliers/peinture. Les informations déclarées doivent rester cohérentes avec la page publiée.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type":"WebPage","@id":"https://piccoloteatro.tn/ateliers/peinture#webpage","url":"https://piccoloteatro.tn/ateliers/peinture","name":"Atelier peinture enfant à Bizerte | Mel Art Piccolo","description":"Mel Art propose un atelier de peinture et d’arts plastiques à Bizerte pour les enfants et adolescents : couleurs, dessin, matières et créativité.","inLanguage":"fr-TN","isPartOf":{"@id":"https://piccoloteatro.tn/#website"},"publisher":{"@id":"https://piccoloteatro.tn/#organization"},"mainEntity":{"@id":"https://piccoloteatro.tn/ateliers/peinture#service"},"breadcrumb":{"@id":"https://piccoloteatro.tn/ateliers/peinture#breadcrumb"}},
+    {"@type":"Service","@id":"https://piccoloteatro.tn/ateliers/peinture#service","name":"Atelier de peinture et d’arts plastiques à Bizerte","description":"Mel Art propose un atelier de peinture et d’arts plastiques à Bizerte pour les enfants et adolescents : couleurs, dessin, matières et créativité.","url":"https://piccoloteatro.tn/ateliers/peinture","serviceType":"Atelier de peinture et d’arts plastiques à Bizerte","provider":{"@id":"https://piccoloteatro.tn/#organization"},"audience":{"@type":"Audience","audienceType":"Enfants de 4 à 8 ans et adolescents intéressés par la peinture et les arts plastiques à Bizerte"},"areaServed":{"@type":"City","name":"Bizerte"}},
+    {"@type":"BreadcrumbList","@id":"https://piccoloteatro.tn/ateliers/peinture#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://piccoloteatro.tn/"},{"@type":"ListItem","position":2,"name":"Atelier peinture Mel Art","item":"https://piccoloteatro.tn/ateliers/peinture"}]}
+  ]
+}
+</script>
+5 Production artistique
+Paramétrage SEO
+Champ
+Valeur
+Permalien
+/activites/production
+Canonical
+https://piccoloteatro.tn/activites/production
+Title
+Production de spectacle vivant en Tunisie | Piccolo
+Meta description
+Piccolo Teatro accompagne la production de spectacles vivants en Tunisie : cadrage artistique, équipe, calendrier, budget, répétitions et préparation technique.
+Mot-clé principal
+production spectacle vivant tunisie
+Mots-clés secondaires
+production artistique tunisie, production spectacle, production théâtrale, projet culturel tunisie, création théâtrale tunisie, accompagnement artistique
+
+Gabarit visuel à conserver  Page Production artistique
+01 Bannière
+Lien de retour  Retour aux activités  |  /#activites
+Surtitre  De l’intention à la création
+H1  Production de spectacle vivant en Tunisie
+Vous avez un texte, une idée de mise en scène ou un spectacle en préparation ? Piccolo Teatro vous aide à passer au concret : réunir l’équipe, organiser les répétitions, construire le budget et préparer les besoins du plateau.
+Bouton  Présenter un projet de spectacle  |  Lien externe
+Bouton  Voir les étapes de production  |  #etapes
+02 Définition
+Surtitre  Réponse directe
+H2  Qu’est-ce que la production artistique d’un spectacle ?
+Produire un spectacle, c’est donner à l’idée les moyens d’exister sur scène. Il faut savoir qui travaille sur le projet, où répéter, quel matériel prévoir, combien coûte la création et à quelle date chaque étape doit être prête.
+Piccolo Teatro accompagne ce passage de l’idée au plateau. L’équipe aide les artistes à faire des choix réalistes sans perdre ce qui donne au projet sa singularité.
+03 Étapes de production
+Ancre HTML  #etapes
+H2  Structurer le projet de la création au plateau
+H3  1. Cadrer l’intention artistique
+Lors de la première séance, l’équipe met au clair ce que le public doit voir, entendre ou ressentir. Cette base guide le sujet, la forme et les principaux choix artistiques.
+H3  2. Identifier l’équipe et les responsabilités
+L’équipe liste les personnes déjà engagées et les compétences qui manquent. Elle répartit ensuite la mise en scène, l’interprétation, la scénographie, la régie, l’administration et la communication.
+H3  3. Construire le calendrier
+Le calendrier place dans le bon ordre l’écriture, les répétitions, la fabrication et les essais techniques. Chacun sait ce qu’il doit terminer avant la prochaine étape.
+H3  4. Estimer les ressources et le budget
+L’équipe chiffre les dépenses, note les ressources déjà disponibles et identifie ce qu’il reste à trouver : espace, matériel, compétences ou partenaires.
+H3  5. Préparer les documents du spectacle
+Avant de présenter le spectacle, l’équipe réunit un dossier fidèle à la création : synopsis, fiche artistique, visuels, calendrier et besoins techniques.
+04 Accompagnement proposé
+H2  Comment Piccolo Teatro accompagne la production
+H3  Dramaturgie et cohérence artistique
+L’équipe relit le projet avec les artistes, repère ce qui manque de clarté et aide à relier le propos, la forme et l’expérience du public.
+H3  Organisation de la production
+L’équipe attribue chaque tâche à une personne et fixe une échéance. Un calendrier et des documents partagés permettent à tous de suivre l’avancement.
+H3  Préparation du travail au plateau
+L’équipe réserve les créneaux de répétition, vérifie l’espace et teste les équipements assez tôt pour travailler sereinement au plateau.
+H3  Présentation du projet
+Le dossier présente clairement le spectacle aux partenaires avec un synopsis, une note d’intention, l’équipe, le calendrier, le budget, la fiche technique et les visuels.
+05 Articulation des services
+H2  Production, incubation ou diffusion : quel accompagnement choisir ?
+Votre idée cherche encore sa forme ? Commencez par l’incubation. La direction artistique est déjà claire et le travail doit s’organiser ? La production est la bonne étape. Le spectacle est prêt à rencontrer des lieux et des publics ? Passez à la diffusion.
+Bouton  Voir l’incubation artistique  |  /activites/incubation
+Bouton  Voir la diffusion de spectacles  |  /activites/diffusion
+06 Préparer la demande
+H2  Les informations utiles pour un premier échange
+Champ
+Texte
+Projet
+Titre provisoire, discipline, format et résumé
+Stade
+Idée, écriture, recherche, répétition ou création prête
+Équipe
+Personnes déjà engagées et compétences recherchées
+Calendrier
+Étapes réalisées et échéances envisagées
+Besoins
+Artistiques, techniques, matériels, administratifs ou budgétaires
+Documents
+Note d’intention, visuels, budget et fiche technique
+
+Bouton  Présenter le projet sur Facebook  |  Lien externe
+07 FAQ à ajouter
+H2  Questions fréquentes sur la production artistique en Tunisie
+Quels projets peuvent demander un accompagnement en production ?
+Piccolo Teatro accompagne les spectacles vivants et les projets culturels qui entrent dans une phase de création concrète. Théâtre, performance, danse ou forme pluridisciplinaire : présentez votre projet, son stade et les besoins de l’équipe.
+Faut-il avoir terminé l’écriture du spectacle ?
+Non. Vous pouvez contacter Piccolo Teatro pendant l’écriture ou les premières recherches. Il faut simplement pouvoir expliquer l’intention du spectacle, son format et ce dont vous avez besoin pour avancer.
+La production inclut-elle un financement ?
+Non. L’accompagnement en production ne vaut pas financement. Il sert à construire le budget, identifier les dépenses et préparer une recherche de partenaires. Toute participation financière ou coproduction fait l’objet d’un accord séparé.
+Quelle est la différence entre production et diffusion ?
+La production organise la création : équipe, calendrier, budget, répétitions et technique. La diffusion prépare la rencontre d’une œuvre avec des lieux et des publics. Un projet passe de l’une à l’autre quand le spectacle est prêt à être présenté.
+Quels documents envoyer à Piccolo Teatro ?
+Envoyez un résumé, une note d’intention, le stade du projet, la composition de l’équipe et les besoins prioritaires. Ajoutez un budget, un calendrier, des visuels, une vidéo ou une fiche technique s’ils existent déjà.
+Piccolo Teatro produit-il seulement des projets à Bizerte ?
+Non. Piccolo Teatro est basé à Bizerte et accompagne des artistes ainsi que des projets culturels venus de toute la Tunisie. Dès le premier échange, l’équipe organise le travail en fonction du lieu et du calendrier du projet.
+08 Appel à l’action final
+H2  Parlez-nous de votre spectacle
+Présentez votre projet en quelques lignes, dites où vous en êtes et ce qui vous bloque aujourd’hui. Piccolo Teatro vous aide à transformer ces besoins en prochaines étapes concrètes.
+Bouton  Présenter mon projet  |  Lien externe
+Bouton  Découvrir la diffusion  |  /activites/diffusion
+Consignes pour les liens et les visuels
+Créer un formulaire projet avec les six champs du dossier de départ et une option de dépôt de documents ; prévoir le consentement relatif aux données personnelles.
+Ne jamais employer « produit par Piccolo Teatro » sans contrat ou crédit validé pour le projet concerné.
+Ne pas promettre de financement, de résidence, de coproduction, de salle ou de date de représentation.
+Relier cette page depuis les ateliers et l’incubation avec une ancre descriptive, pas avec « en savoir plus ».
+Exemples de textes alternatifs, à employer uniquement si les photographies montrent bien ces scènes :
+Répétition d’un spectacle vivant accompagné par Piccolo Teatro en Tunisie
+Équipe artistique préparant le calendrier et les besoins d’une production théâtrale
+Schema markup de la page
+JSON-LD à intégrer sur https://piccoloteatro.tn/activites/production. Les informations déclarées doivent rester cohérentes avec la page publiée.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type":"WebPage","@id":"https://piccoloteatro.tn/activites/production#webpage","url":"https://piccoloteatro.tn/activites/production","name":"Production de spectacle vivant en Tunisie | Piccolo","description":"Piccolo Teatro accompagne la production de spectacles vivants en Tunisie : cadrage artistique, équipe, calendrier, budget, répétitions et préparation technique.","inLanguage":"fr-TN","isPartOf":{"@id":"https://piccoloteatro.tn/#website"},"publisher":{"@id":"https://piccoloteatro.tn/#organization"},"mainEntity":{"@id":"https://piccoloteatro.tn/activites/production#service"},"breadcrumb":{"@id":"https://piccoloteatro.tn/activites/production#breadcrumb"}},
+    {"@type":"Service","@id":"https://piccoloteatro.tn/activites/production#service","name":"Production de spectacle vivant en Tunisie","description":"Piccolo Teatro accompagne la production de spectacles vivants en Tunisie : cadrage artistique, équipe, calendrier, budget, répétitions et préparation technique.","url":"https://piccoloteatro.tn/activites/production","serviceType":"Production de spectacle vivant en Tunisie","provider":{"@id":"https://piccoloteatro.tn/#organization"},"audience":{"@type":"Audience","audienceType":"Artistes, compagnies et porteurs de projets de spectacle vivant en Tunisie"},"areaServed":{"@type":"Country","name":"Tunisie"}},
+    {"@type":"BreadcrumbList","@id":"https://piccoloteatro.tn/activites/production#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://piccoloteatro.tn/"},{"@type":"ListItem","position":2,"name":"Production artistique","item":"https://piccoloteatro.tn/activites/production"}]}
+  ]
+}
+</script>
+6 Incubation artistique
+Paramétrage SEO
+Champ
+Valeur
+Permalien
+/activites/incubation
+Canonical
+https://piccoloteatro.tn/activites/incubation
+Title
+Incubation artistique en Tunisie | Piccolo Teatro
+Meta description
+Piccolo Teatro accompagne l’incubation de projets artistiques en Tunisie : clarification de l’idée, expérimentation, publics, ressources et feuille de route.
+Mot-clé principal
+incubation artistique tunisie
+Mots-clés secondaires
+incubation artistique, accompagnement projet culturel tunisie, accompagnement artistique, projet culturel tunisie, incubateur culturel tunisie, résidence artistique
+
+Gabarit visuel à conserver  Page Incubation artistique
+01 Bannière
+Lien de retour  Retour aux activités  |  /#activites
+Surtitre  Transformer une intuition en projet
+H1  Incubation artistique et accompagnement de projets culturels en Tunisie
+Vous avez une idée artistique, mais vous ne savez pas encore quelle forme lui donner ? Avec Piccolo Teatro, vous la mettez à l’épreuve, vous précisez son public et vous choisissez les étapes utiles pour avancer.
+Bouton  Présenter une idée de projet  |  Lien externe
+Bouton  Voir le parcours d’incubation  |  #parcours
+02 Définition
+Surtitre  Réponse directe
+H2  Qu’est-ce que l’incubation artistique ?
+L’incubation artistique est le temps de travail qui précède la production. On y précise ce que l’on veut créer, à qui le projet s’adresse et ce qu’il faut tester avant d’engager une équipe, un calendrier et un budget.
+Les échanges avec Piccolo Teatro mènent à un essai concret. Une scène, un atelier pilote, une image ou une rencontre avec le public montre ce qui fonctionne et ce qu’il faut retravailler.
+03 Public concerné
+H2  À qui s’adresse l’accompagnement ?
+H3  Artistes au début d’une recherche
+Vous partez d’une intuition, d’un thème ou d’une envie de scène. Le travail consiste à trouver une forme et à choisir un premier essai qui permettra de la confronter au réel.
+H3  Porteurs de projets culturels
+Vous préparez une action culturelle pour un public ou un territoire précis. L’incubation aide à adapter la proposition aux personnes concernées et à identifier les partenaires utiles.
+H3  Équipes qui souhaitent repositionner un projet
+Votre projet a déjà été testé, mais il doit évoluer. L’équipe relit les retours avec vous, conserve ce qui fonctionne et reprend les points qui bloquent.
+04 Parcours d’incubation
+Ancre HTML  #parcours
+H2  Quatre étapes pour passer de l’idée au projet
+H3  1. Clarifier
+On met des mots simples sur l’idée, l’intention artistique, le format envisagé et la raison de créer ce projet aujourd’hui.
+H3  2. Explorer
+On cherche des références, on observe les contraintes et on ouvre plusieurs pistes avant d’en choisir une.
+H3  3. Expérimenter
+On teste une scène, un atelier, une image ou une rencontre. Le projet cesse d’être théorique et les réactions apportent des réponses concrètes.
+H3  4. Structurer
+On choisit une direction et on établit une feuille de route avec les prochaines étapes, les personnes à réunir et les ressources nécessaires.
+05 Axes de travail
+H2  Les questions travaillées pendant l’incubation
+H3  Proposition artistique
+Que doit voir, entendre, ressentir ou faire le public ? La réponse précise la forme, le langage artistique et la place donnée aux spectateurs.
+H3  Publics et territoire
+À qui s’adresse le projet ? L’équipe observe le contexte, les habitudes du public et les réalités du territoire pour adapter la proposition au lieu et aux personnes concernées.
+H3  Ressources et partenaires
+L’équipe identifie les compétences, les espaces, les outils et les partenaires dont le projet a réellement besoin.
+H3  Feuille de route
+La feuille de route fixe les décisions à prendre, les prochains tests et les documents à préparer avant la production ou la diffusion.
+06 Passage à l’étape suivante
+H2  Quand l’incubation est-elle terminée ?
+L’incubation se termine quand l’équipe sait expliquer le projet, nommer son public, défendre sa forme et organiser la suite. L’œuvre n’est pas forcément terminée, mais la direction est claire.
+Le projet entre ensuite en production pour réunir l’équipe, le budget et les répétitions. Quand la création est prête à être montrée, la diffusion prend le relais.
+Bouton  Découvrir la production  |  /activites/production
+Bouton  Découvrir la diffusion  |  /activites/diffusion
+07 Préparer la demande
+H2  Présenter son projet à Piccolo Teatro
+Champ
+Texte
+Idée
+Une phrase simple qui décrit la proposition
+Motivation
+Pourquoi ce projet et pourquoi maintenant
+Public
+Personnes ou communautés concernées
+Stade
+Recherche, premier test ou projet à repositionner
+Besoin
+Décision, compétence ou expérimentation prioritaire
+Disponibilité
+Temps que l’équipe consacre au projet
+
+Bouton  Présenter mon idée  |  Lien externe
+08 FAQ à ajouter
+H2  Questions fréquentes sur l’incubation artistique en Tunisie
+Quelle est la différence entre incubation et production artistique ?
+L’incubation clarifie et teste une idée. La production commence quand la direction artistique est posée et qu’il faut organiser l’équipe, le budget, le calendrier, les répétitions et la technique. Piccolo Teatro vous oriente vers la bonne étape dès le premier échange.
+Faut-il déjà avoir une équipe constituée ?
+Non. Un artiste ou un porteur de projet vient aussi seul avec son idée. L’incubation sert à identifier les compétences nécessaires et les personnes à réunir autour du projet.
+L’incubation est-elle réservée au théâtre ?
+Non. Piccolo Teatro accueille différents projets artistiques et culturels : spectacle vivant, performance, arts visuels ou projet lié à un public et à un territoire.
+Piccolo Teatro finance-t-il les projets incubés ?
+Non. L’incubation n’est pas un financement. Elle aide à chiffrer les besoins, préparer le projet et construire un dossier plus solide pour chercher des partenaires.
+Une résidence artistique est-elle incluse ?
+Non. L’incubation et la résidence sont deux dispositifs différents. Lorsqu’une résidence est organisée par Piccolo Teatro, elle dispose de ses propres dates, conditions d’accueil et modalités de participation.
+Comment proposer un projet culturel ?
+Envoyez quelques lignes sur l’idée, la discipline, le public, le stade du projet et votre principal besoin. L’équipe vous répond avec le point de départ le plus utile : incubation, production ou diffusion.
+09 Appel à l’action final
+H2  Parlez-nous de votre idée
+Décrivez votre projet en quelques lignes, son public et la question qui vous bloque aujourd’hui. Ce point de départ suffit pour ouvrir un premier échange.
+Bouton  Présenter une idée à Piccolo Teatro  |  Lien externe
+Bouton  Voir la production artistique  |  /activites/production
+Consignes pour les liens et les visuels
+Conserver le terme « incubation artistique », mais l’expliquer immédiatement par « accompagnement de projets culturels » pour éviter le vocabulaire de startup.
+Ne publier aucun appel à candidatures permanent : créer une page ou un bloc daté seulement lorsqu’un dispositif réel est ouvert.
+Ne pas promettre de financement, de résidence, d’espace de travail, de durée fixe ou de sélection sans conditions officielles.
+Le formulaire doit demander le stade du projet et le besoin prioritaire afin d’orienter correctement vers incubation, production ou diffusion.
+Exemples de textes alternatifs, à employer uniquement si les photographies montrent bien ces scènes :
+Porteurs de projets culturels en séance de travail à Piccolo Teatro Bizerte
+Expérimentation artistique au plateau pendant une phase d’incubation
+Schema markup de la page
+JSON-LD à intégrer sur https://piccoloteatro.tn/activites/incubation. Les informations déclarées doivent rester cohérentes avec la page publiée.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type":"WebPage","@id":"https://piccoloteatro.tn/activites/incubation#webpage","url":"https://piccoloteatro.tn/activites/incubation","name":"Incubation artistique en Tunisie | Piccolo Teatro","description":"Piccolo Teatro accompagne l’incubation de projets artistiques en Tunisie : clarification de l’idée, expérimentation, publics, ressources et feuille de route.","inLanguage":"fr-TN","isPartOf":{"@id":"https://piccoloteatro.tn/#website"},"publisher":{"@id":"https://piccoloteatro.tn/#organization"},"mainEntity":{"@id":"https://piccoloteatro.tn/activites/incubation#service"},"breadcrumb":{"@id":"https://piccoloteatro.tn/activites/incubation#breadcrumb"}},
+    {"@type":"Service","@id":"https://piccoloteatro.tn/activites/incubation#service","name":"Incubation artistique et accompagnement de projets culturels en Tunisie","description":"Piccolo Teatro accompagne l’incubation de projets artistiques en Tunisie : clarification de l’idée, expérimentation, publics, ressources et feuille de route.","url":"https://piccoloteatro.tn/activites/incubation","serviceType":"Incubation artistique et accompagnement de projets culturels en Tunisie","provider":{"@id":"https://piccoloteatro.tn/#organization"},"audience":{"@type":"Audience","audienceType":"Artistes émergents et porteurs de projets culturels en Tunisie"},"areaServed":{"@type":"Country","name":"Tunisie"}},
+    {"@type":"BreadcrumbList","@id":"https://piccoloteatro.tn/activites/incubation#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://piccoloteatro.tn/"},{"@type":"ListItem","position":2,"name":"Incubation artistique","item":"https://piccoloteatro.tn/activites/incubation"}]}
+  ]
+}
+</script>
+7 Diffusion artistique
+Paramétrage SEO
+Champ
+Valeur
+Permalien
+/activites/diffusion
+Canonical
+https://piccoloteatro.tn/activites/diffusion
+Title
+Diffusion de spectacles en Tunisie | Piccolo Teatro
+Meta description
+Piccolo Teatro accompagne la diffusion de spectacles en Tunisie : dossier, formats, fiche technique, partenaires, lieux, programmation et publics.
+Mot-clé principal
+diffusion de spectacles tunisie
+Mots-clés secondaires
+diffusion artistique tunisie, diffusion spectacle vivant, programmation artistique tunisie, spectacle tunisie, événement culturel bizerte, programmateur culturel tunisie
+
+Gabarit visuel à conserver  Page Diffusion artistique
+01 Bannière
+Lien de retour  Retour aux activités  |  /#activites
+Surtitre  Présenter le spectacle à de nouveaux lieux
+H1  Diffusion de spectacles et de projets artistiques en Tunisie
+Votre spectacle est prêt à sortir du studio ? Depuis Bizerte, Piccolo Teatro vous aide à le présenter clairement, préparer ses conditions d’accueil et entrer en contact avec des lieux et des partenaires culturels en Tunisie.
+Bouton  Proposer un spectacle ou un projet  |  Lien externe
+Bouton  Voir les éléments à préparer  |  #dossier
+02 Définition
+Surtitre  Réponse directe
+H2  Qu’est-ce que la diffusion d’un spectacle ?
+Diffuser un spectacle, c’est le faire sortir de son espace de création pour le présenter à de nouveaux publics. Ce travail passe par un dossier solide, des visuels, une fiche technique, une recherche de lieux et des échanges adaptés à chaque programmation.
+Avant de retenir une date, le lieu et l’équipe artistique vérifient que le format, le public, le calendrier, le budget et les conditions techniques sont compatibles.
+03 Formats
+H2  Quels projets peuvent être diffusés ?
+H3  Spectacles et représentations
+Un spectacle de théâtre, de performance ou de danse peut être proposé dès que sa durée, sa jauge et ses besoins techniques sont clairement définis.
+H3  Expositions
+Une exposition doit présenter les œuvres, le propos qui les relie, le plan d’accrochage et les conditions de transport ou de montage.
+H3  Projections
+Pour une projection, le dossier précise le film ou la vidéo, les droits de présentation, le format du fichier et le matériel nécessaire.
+H3  Rencontres et médiation
+Une rencontre avec les artistes ou un atelier peut accompagner la représentation et donner au public des repères pour entrer dans l’œuvre.
+04 Dossier de diffusion
+Ancre HTML  #dossier
+H2  Les éléments à préparer avant de contacter un lieu
+H3  Présentation artistique
+Présentez le titre, le résumé, la note d’intention et les membres de l’équipe. Le lecteur doit comprendre rapidement ce que le public verra ou vivra.
+H3  Éléments visuels et vidéo
+Choisissez des photographies créditées et une vidéo fidèle au spectacle. Vérifiez les autorisations avant d’envoyer ou de publier ces fichiers.
+H3  Fiche technique
+La fiche technique détaille la durée, le montage, le plateau, le son, la lumière, la projection, le transport et le nombre de personnes en déplacement.
+H3  Conditions et calendrier
+Indiquez les périodes disponibles, les villes recherchées, la jauge, les conditions financières et les coordonnées de la personne qui suit la diffusion.
+05 Méthode
+H2  Comment préparer la diffusion avec Piccolo Teatro ?
+H3  1. Qualifier le projet
+Au premier échange, Piccolo Teatro compare le spectacle et son dossier. La forme, l’équipe, la durée et les besoins doivent raconter le même projet.
+H3  2. Identifier les interlocuteurs
+Piccolo Teatro recherche des lieux et des partenaires dont la ligne artistique, le territoire et les capacités d’accueil correspondent au projet.
+H3  3. Adapter la proposition
+Le message adressé à chaque lieu reprend les informations qui comptent pour sa programmation et explique ce qui relie le spectacle à son public.
+H3  4. Formaliser chaque accord
+Une fois la date retenue, l’accord écrit fixe le lieu, les responsabilités, les conditions financières, la technique et la communication.
+06 Rôles
+H2  Diffusion, programmation et production : trois rôles différents
+La production construit le spectacle. La diffusion le présente aux lieux et prépare sa circulation. La programmation commence lorsqu’un lieu choisit de l’accueillir à une date précise. Piccolo Teatro intervient dans la diffusion et programme aussi des projets dans le cadre de ses activités.
+Cette distinction évite d’envoyer un dossier de diffusion quand le spectacle a encore besoin d’être produit, ou de demander une programmation sans informations techniques.
+07 Repères
+H2  La diffusion en pratique
+Champ
+Texte
+Projets
+Spectacles, performances, expositions, projections et rencontres
+Porteurs
+Artistes, compagnies et équipes culturelles
+Partenaires
+Lieux, festivals, associations et programmateurs
+Point d’ancrage
+7VCF+G25, rue Habib Thameur, Bizerte
+Éléments clés
+Dossier artistique, visuels, vidéo, fiche technique et calendrier
+Objectif
+Présenter le projet aux lieux et préparer sa programmation
+
+08 FAQ à ajouter
+H2  Questions fréquentes sur la diffusion de spectacles en Tunisie
+Quelle est la différence entre diffusion et programmation ?
+La diffusion prépare le spectacle à circuler et le présente aux lieux. La programmation est la décision d’un théâtre ou d’un festival de l’accueillir à une date précise.
+Un spectacle doit-il être terminé avant la diffusion ?
+Le spectacle doit être assez construit pour présenter une durée, une équipe, un propos et des besoins techniques fiables. La diffusion démarre souvent pendant les dernières répétitions, avec des images et une vidéo représentatives du travail.
+Que doit contenir un dossier de diffusion ?
+Préparez un résumé, une note d’intention, les biographies de l’équipe, des photos créditées, une vidéo, la durée, la fiche technique, les disponibilités et un contact. Le dossier doit donner envie de découvrir le spectacle tout en répondant aux questions pratiques du lieu.
+Piccolo Teatro garantit-il une représentation ou une tournée ?
+Non. La diffusion ouvre le dialogue avec des lieux, mais chacun reste libre de sa programmation. Une représentation existe dès que la date, le budget et les conditions d’accueil sont validés par écrit.
+Un lieu culturel peut-il proposer un partenariat ?
+Oui. Un théâtre, un festival ou une association présente sa programmation, son public et ses conditions d’accueil. L’équipe de Piccolo Teatro étudie ensuite les projets qui correspondent à ce contexte.
+Où voir les prochains spectacles de Piccolo Teatro à Bizerte ?
+Les prochains spectacles sont publiés dans l’agenda du site ainsi que sur les comptes Facebook et Instagram de Piccolo Teatro, avec le lieu, l’horaire et les informations de réservation.
+09 Appel à l’action final
+H2  Présentez votre spectacle à Piccolo Teatro
+Envoyez une présentation courte, une vidéo, quelques visuels et votre fiche technique. Piccolo Teatro vous aide à préparer une proposition claire pour les lieux et les publics visés.
+Bouton  Proposer un projet  |  Lien externe
+Bouton  Consulter les événements  |  /#evenements
+Consignes pour les liens et les visuels
+Séparer techniquement les formulaires « proposer un projet » et « réserver un événement » afin de distinguer les intentions professionnelles et publiques.
+Ne jamais afficher un logo de partenaire, une date ou une tournée sans autorisation et confirmation écrite.
+Associer chaque spectacle à une page indexable contenant synopsis, équipe, durée, lieu, date, accessibilité et réservation, lorsqu’une programmation est confirmée.
+Employer « diffusion » pour l’accompagnement, « programmation » pour une décision confirmée et « agenda » pour les recherches de sorties.
+Exemples de textes alternatifs, à employer uniquement si les photographies montrent bien ces scènes :
+Présentation d’un spectacle accompagné en diffusion par Piccolo Teatro
+Rencontre entre artistes et public lors d’un événement culturel à Bizerte
+Schema markup de la page
+JSON-LD à intégrer sur https://piccoloteatro.tn/activites/diffusion. Les informations déclarées doivent rester cohérentes avec la page publiée.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type":"WebPage","@id":"https://piccoloteatro.tn/activites/diffusion#webpage","url":"https://piccoloteatro.tn/activites/diffusion","name":"Diffusion de spectacles en Tunisie | Piccolo Teatro","description":"Piccolo Teatro accompagne la diffusion de spectacles en Tunisie : dossier, formats, fiche technique, partenaires, lieux, programmation et publics.","inLanguage":"fr-TN","isPartOf":{"@id":"https://piccoloteatro.tn/#website"},"publisher":{"@id":"https://piccoloteatro.tn/#organization"},"mainEntity":{"@id":"https://piccoloteatro.tn/activites/diffusion#service"},"breadcrumb":{"@id":"https://piccoloteatro.tn/activites/diffusion#breadcrumb"}},
+    {"@type":"Service","@id":"https://piccoloteatro.tn/activites/diffusion#service","name":"Diffusion de spectacles et de projets artistiques en Tunisie","description":"Piccolo Teatro accompagne la diffusion de spectacles en Tunisie : dossier, formats, fiche technique, partenaires, lieux, programmation et publics.","url":"https://piccoloteatro.tn/activites/diffusion","serviceType":"Diffusion de spectacles et de projets artistiques en Tunisie","provider":{"@id":"https://piccoloteatro.tn/#organization"},"audience":{"@type":"Audience","audienceType":"Artistes, compagnies, lieux et partenaires culturels en Tunisie"},"areaServed":{"@type":"Country","name":"Tunisie"}},
+    {"@type":"BreadcrumbList","@id":"https://piccoloteatro.tn/activites/diffusion#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://piccoloteatro.tn/"},{"@type":"ListItem","position":2,"name":"Diffusion artistique","item":"https://piccoloteatro.tn/activites/diffusion"}]}
+  ]
+}
+</script>
+Consignes techniques communes
+Les règles suivantes s’appliquent aux sept pages lors de leur intégration sur le domaine final.
+Paramètre
+Consigne
+Langue
+Définir lang="fr-TN". Le site et les contenus restent uniquement en français. Ne pas créer de version arabe ni de hreflang AR.
+Indexation
+Publier les pages finales en index, follow. Maintenir la démo en noindex tant qu’elle sert d’environnement de travail.
+Canonical
+Utiliser la canonical propre indiquée dans chaque chapitre. Ne pas canoniser les six pages métiers vers l’accueil.
+Robots et sitemap
+Autoriser les ressources utiles au rendu, déclarer le sitemap XML dans robots.txt et inclure uniquement les URL canoniques indexables.
+Structure Hn
+Conserver un seul H1 par page. Intégrer les H2 et H3 dans l’ordre indiqué ; les surtitres restent de simples paragraphes.
+Liens internes
+Créer de vrais liens HTML explorables et conserver les ancres précisées. Vérifier chaque bouton avant la mise en ligne.
+Images
+Remplacer les visuels de démonstration. Décrire les images informatives avec un alt fidèle et laisser alt="" aux images décoratives.
+Métadonnées sociales
+Reprendre le title, la meta description et une image réelle de la page dans les balises Open Graph et Twitter.
+Données structurées
+Intégrer le JSON-LD placé à la fin de chaque chapitre et maintenir ses informations identiques au contenu visible.
+Adresse locale
+Afficher la même adresse dans le pied de page, la page d’accueil, le lien Maps et les données structurées : 7VCF+G25, rue Habib Thameur, Bizerte.
+Performance
+Compresser les images en WebP ou AVIF, réserver leurs dimensions, différer les scripts non essentiels et contrôler les Core Web Vitals sur mobile.
+Accessibilité
+Rendre les boutons accessibles au clavier, nommer les champs de formulaire, conserver un contraste lisible et ne jamais transmettre une information seulement par la couleur.
+
+Le domaine utilisé dans les canoniques, les liens et les schémas est https://piccoloteatro.tn. Si le domaine final diffère, remplacer cette origine partout avant publication.
+Créer des redirections permanentes de /ateliers/dna vers /ateliers/danse et de /ateliers/mel-art vers /ateliers/peinture si les anciennes URL ont été publiques. Mettre à jour les liens internes et le sitemap avec les URL finales.
+Les mots-clés principal et secondaires guident l’intégration éditoriale. Ils ne doivent pas être ajoutés dans une balise meta keywords. Les six questions-réponses de chaque page restent visibles dans le contenu ; aucun balisage FAQPage n’est demandé.
+Navigation et pied de page communs
+Libellé
+Destination
+Accueil
+/
+Le centre
+/#centre
+Ateliers
+/#ateliers
+Activités
+/#activites
+Agenda
+/#evenements
+Projets
+/#spectacles
+Contact
+/#contact
+
+Sous-menu Ateliers  Théâtre ; DNA — Danse ; Mel Art — Peinture.
+Sous-menu Activités  Production ; Diffusion ; Incubation.
+Le lien Actualités peut être réintroduit quand le bloc contient des contenus publiés. Les autres liens du pied de page reprennent ces destinations réelles.
+Texte du pied de page
+Piccolo Teatro di Bizerta est un centre culturel à Bizerte dédié au théâtre, à la danse, à la peinture et à l’accompagnement de projets artistiques.
+7VCF+G25, rue Habib Thameur, Bizerte, Tunisie
+Itinéraire Google Maps
+Facebook officiel
+Instagram officiel
+Intégration  Conserver l’adresse et les deux comptes officiels ci-dessus. Compléter avec le téléphone général, l’adresse électronique et les horaires d’accueil lorsqu’ils sont validés. Retirer intégralement les coordonnées de Bruxelles et l’adresse en .be présentes dans la démo.
+Inscription aux nouvelles du centre
+Les nouvelles de Piccolo
+Recevez les prochaines dates des ateliers, spectacles, expositions et rencontres de Piccolo Teatro à Bizerte.
+Bouton  Recevoir les nouvelles du centre
+Intégration  Afficher ce module après activation du formulaire et du traitement de l’inscription. Ne pas promettre une fréquence mensuelle sans calendrier éditorial confirmé. Les liens Mentions légales et Confidentialité doivent mener à des pages publiées.
+Données opérationnelles à compléter
+	•	Téléphone et adresse électronique généraux du centre
+	•	Horaires d’accueil permanents ou saisonniers
+	•	Tarifs, dates de reprise et places disponibles pour chaque groupe
+	•	Responsables actuels et contenu détaillé de chaque atelier
+	•	Modalités de dépôt et délais de réponse pour les projets artistiques
+	•	Prochaines dates confirmées, billetterie et informations d’accessibilité
+	•	Visuels, crédits, droits et autorisations de publication
+Valider ces données avant la mise en ligne et remplacer toutes les informations fictives ou étrangères présentes dans la démonstration.
