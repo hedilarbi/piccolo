@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Centre culturel et artistique dédié au théâtre, à la création et à l’accompagnement des artistes.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr-TN" className={`${archivo.variable} ${bodoni.variable}`}>
       <body className="min-h-dvh bg-background text-foreground antialiased">

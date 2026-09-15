@@ -1,6 +1,7 @@
 import type { SpectacleDocument } from "@/lib/spectacle-admin";
 
 export type Spectacle = {
+  _id: string;
   slug: string;
   title: string;
   titleLines: [string, string];
@@ -26,6 +27,7 @@ export type Spectacle = {
 
 export const spectacles: readonly Spectacle[] = [
   {
+    _id: "64e0a4f6d4d1d1f00b999999",
     slug: "le-cri-des-murs",
     title: "Le Cri des Murs",
     titleLines: ["Le Cri", "des Murs"],
@@ -104,7 +106,7 @@ export async function getSpectacle(slug: string): Promise<Spectacle | undefined>
   if (!event) return undefined;
   const dateLabel = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "short", year: "numeric" }).format(event.applicationDeadline);
   return {
-    slug: event.slug, title: event.title, titleLines: splitTitle(event.title), season: event.season, audienceLabel: event.audienceLabel,
+    _id: event._id.toHexString(), slug: event.slug, title: event.title, titleLines: splitTitle(event.title), season: event.season, audienceLabel: event.audienceLabel,
     description: event.description, deadline: `Clôture des candidatures — ${dateLabel}`,
     image: event.image || "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=900&h=1200&fit=crop&q=80", creation: event.creationLabel || "CRÉATION", director: event.director || "Piccolo Teatro", partnerCount: event.partnerCount || "Saison en cours",
     facts: event.facts,
